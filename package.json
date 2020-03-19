@@ -1,0 +1,20 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "My personal blog.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:tjventurini/blog.git"
+  },
+  "scripts": {
+    "watch": "npm run dev",
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "author": "Thomas Venturini <thomas@venturini.codes>",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.4.0"
+  }
+}
