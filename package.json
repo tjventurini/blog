@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "My personal blog.",
-  "license": "MIT",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:tjventurini/blog.git"
@@ -13,8 +13,9 @@
     "build": "vuepress build"
   },
   "author": "Thomas Venturini <thomas@venturini.codes>",
-  "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.2",
+    "@vuepress/plugin-google-analytics": "^1.4.0",
     "vuepress": "^1.4.0"
   }
 }
