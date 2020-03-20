@@ -1,0 +1,88 @@
+<template>
+    <span class="moving-gradient-text" :style="styleObject">
+        {{ text }}
+    </span>
+</template>
+
+<script>
+    export default {
+        name: "MovingGradientText",
+        props: ['text', 'font-size'],
+        data() {
+            return {
+                styleObject: {
+                    fontSize: this.fontSize
+                }
+            }
+        }
+    }
+</script>
+
+<style scoped>
+    .moving-gradient-text {
+        /* normal styles */
+        font-weight: bolder;
+
+        /* animation */
+        background: linear-gradient(270deg, #c024c1, #4e43e4, #17b4c5);
+        background-size: 600% 600%;
+        color: #000;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: movingGradientText 30s ease infinite;
+        -moz-animation: movingGradientText 30s ease infinite;
+        -o-animation: movingGradientText 30s ease infinite;
+        animation: movingGradientText 30s ease infinite;
+    }
+
+    @-webkit-keyframes movingGradientText {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes movingGradientText {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-o-keyframes movingGradientText {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes movingGradientText {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+</style>
