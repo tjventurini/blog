@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="page mx-auto max-w-screen-lg text-gray-700">
         <Header/>
         <Content/>
     </div>

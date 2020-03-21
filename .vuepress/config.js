@@ -1,10 +1,13 @@
 module.exports = {
-    "title": "Thomas Venturini",
-    "description": "My personal blog.",
-    "themeConfig": {
-
-    },
-    "head": [
+    title: "Thomas Venturini",
+    description: "My personal blog.",
+    themeConfig: {},
+    head: [
         // https://vuepress.vuejs.org/config/#head
     ],
+    postcss: {
+        plugins: [
+            require('tailwindcss')(),
+        ]
+    }
 }
