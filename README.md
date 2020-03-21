@@ -1,5 +1,5 @@
 ---
-title: Thomas Venturini
+title: Home
 description: My personal blog.
 ---
 
