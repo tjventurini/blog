@@ -9,6 +9,6 @@
     import Header from '@theme/components/Header'
 
     export default {
-        components: {Header}
+        components: {Header},
     }
 </script>

@@ -1,6 +1,5 @@
 ---
 title: Home
 description: My personal blog.
+layout: Home
 ---
-
-Hello World!
