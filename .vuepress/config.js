@@ -1,5 +1,5 @@
 module.exports = {
-    title: "Thomas Venturini",
+    title: "Blog",
     description: "My personal blog.",
     themeConfig: {},
     head: [
