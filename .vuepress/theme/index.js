@@ -1,10 +1,19 @@
-module.exporots = {
+module.exports = {
     plugins: [
-        ['@vuepress/google-analytics', {ga: 'UA-36004715-1'}],
         ['@vuepress/blog', {
-
+            directories: [
+                {
+                    id: 'articles',
+                    title: 'Home',
+                    dirname: 'articles',
+                    path: '/',
+                    layout: 'Home',
+                    pagination: {
+                        lengthPerPage: 2
+                    },
+                    itemPermalink: '/articles/:slug'
+                }
+            ]
         }],
-        'seo',
-        'disqus'
     ]
 }

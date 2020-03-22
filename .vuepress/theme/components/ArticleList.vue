@@ -11,12 +11,5 @@
         name: "ArticleList",
         components: {ArticleItem},
         props: ['articles'],
-        data() {
-            return {}
-        }
     }
 </script>
-
-<style scoped>
-
-</style>

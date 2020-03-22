@@ -1,11 +1,15 @@
 <template>
-    <div class="header mx-auto p-4">
-        <div class="grid grid-cols-12 gap-4">
+    <div class="header mx-auto py-4">
+        <div class="grid grid-cols-12">
             <div class="col-span-1 align-middle">
-                <Logo/>
+                <a href="/">
+                    <Logo/>
+                </a>
             </div>
             <div class="col-span-11">
-                <h1><span class="align-middle heading-10">Thomas Venturini</span></h1>
+                <a href="/">
+                    <h1><span class="align-middle heading-10 font-bold text-4xl">Thomas Venturini</span></h1>
+                </a>
             </div>
         </div>
     </div>
@@ -18,10 +22,3 @@
         components: {Logo}
     }
 </script>
-
-<style lang="sass" scoped>
-    .header
-        h1
-            font-weight: bolder
-            font-size: 32px
-</style>

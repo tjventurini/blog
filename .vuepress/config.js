@@ -3,11 +3,11 @@ module.exports = {
     description: "My personal blog.",
     themeConfig: {},
     head: [
-        // https://vuepress.vuejs.org/config/#head
+        ['link', {rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png"}],
     ],
     postcss: {
         plugins: [
             require('tailwindcss')(),
         ]
-    }
+    },
 }
