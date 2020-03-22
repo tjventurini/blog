@@ -23,10 +23,12 @@
         computed: {
             articles() {
                 console.log(this.$site.pages);
-                console.log(this.$pagination.pages);
-                // return this.$site.pages.filter((page) => /^\/articles\//.test(page.regularPath)).reverse();
-                // return this.$pagination.pages.filter((page) => /^\/articles\//.test(page.regularPath)).reverse();
-                return this.$pagination.pages;
+                return this.$site.pages.filter(function (page) {
+                    return /^\/articles\//.test(page.regularPath)
+                })
+                    .filter((page) => (page.title))
+                    .reverse()
+                    .slice(0, 5);
             }
         }
     }

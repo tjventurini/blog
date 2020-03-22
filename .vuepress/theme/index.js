@@ -1,13 +1,16 @@
 module.exports = {
     plugins: [
         ['@vuepress/blog', {
+            sitemap: {
+                hostname: 'https://thomasventurini.com',
+            },
             directories: [
                 {
                     id: 'articles',
-                    title: 'Home',
+                    title: 'Articles',
                     dirname: 'articles',
-                    path: '/',
-                    layout: 'Home',
+                    path: '/articles/',
+                    layout: 'Directory',
                     pagination: {
                         lengthPerPage: 2
                     },
