@@ -5,6 +5,9 @@
             <div class="col-span-8">
                 <PageTitle/>
                 <ArticleList :articles="articles"/>
+                <div v-if="articles.length > 5" class="more-button text-center">
+                    <a class="font-bold moving-gradient-bg text-white p-2 rounded-lg" href="/articles/">Read more</a>
+                </div>
             </div>
             <div class="col-span-4">
 
@@ -22,12 +25,16 @@
         components: {PageTitle, Header, ArticleList},
         computed: {
             articles() {
-                console.log(this.$site.pages);
                 return this.$site.pages.filter(function (page) {
                     return /^\/articles\//.test(page.regularPath)
                 })
                     .filter((page) => (page.title))
-                    .reverse()
+                    .sort((prev, next) => {
+                        const dayjs = require('dayjs');
+                        const prevTime = dayjs(prev.frontmatter.date);
+                        const nextTime = dayjs(next.frontmatter.date);
+                        return prevTime - nextTime > 0 ? -1 : 1;
+                    })
                     .slice(0, 5);
             }
         }

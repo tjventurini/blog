@@ -22,13 +22,8 @@
         components: {PageTitle, Header, ArticleList},
         computed: {
             articles() {
-                console.log(this.$site.pages);
-                return this.$site.pages.filter(function (page) {
-                    return /^\/articles\//.test(page.regularPath)
-                })
-                    .filter((page) => (page.title))
-                    .reverse()
-                    .slice(0, 5);
+                console.log(this.$pagination);
+                return this.$pagination.pages;
             }
         }
     }

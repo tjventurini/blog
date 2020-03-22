@@ -12,7 +12,8 @@ module.exports = {
                     path: '/articles/',
                     layout: 'Directory',
                     pagination: {
-                        lengthPerPage: 2
+                        lengthPerPage: 1,
+                        layout: 'Directory'
                     },
                     itemPermalink: '/articles/:slug'
                 }

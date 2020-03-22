@@ -23,5 +23,8 @@
 
     export default {
         components: {PageTitle, Header},
+        data() {
+            return {};
+        }
     }
 </script>
