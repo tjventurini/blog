@@ -12,6 +12,12 @@
                 </div>
                 <h3 class="pb-2 text-xl font-bold"><a :href="article.path">{{ article.title }}</a></h3>
                 <div v-html="article.excerpt"></div>
+                <div class="more-button pt-4">
+                    <a :href="article.path"
+                       class="moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm">
+                        <i class="far fa-eye"></i>
+                        &nbsp; more</a>
+                </div>
             </div>
         </div>
     </div>

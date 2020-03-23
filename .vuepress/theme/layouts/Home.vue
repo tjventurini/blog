@@ -3,10 +3,14 @@
         <Header/>
         <div class="grid grid-cols-12">
             <div class="col-span-8">
+
                 <PageTitle/>
+
                 <ArticleList :articles="articles"/>
+
                 <div v-if="articles.length > 5" class="more-button text-center">
-                    <a class="font-bold moving-gradient-bg text-white p-2 rounded-lg" href="/articles/">Read more</a>
+                    <a class="font-bold moving-gradient-bg text-white p-2 rounded-lg" href="/articles/">See all
+                        articles</a>
                 </div>
             </div>
             <div class="col-span-4">

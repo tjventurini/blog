@@ -1,6 +1,6 @@
 <template>
-    <div class="logo moving-gradient-text text-center">
-        {☕}
+    <div class="logo moving-gradient-text text-center font-bold text-4xl">
+        {&nbsp;<i class="fa fa-feather-alt moving-gradient-text text-3xl"></i>&nbsp;}
     </div>
 </template>
 
@@ -9,9 +9,3 @@
         name: "Logo",
     }
 </script>
-
-<style lang="sass" scoped>
-    .logo
-        font-weight: bolder
-        font-size: 32px
-</style>
