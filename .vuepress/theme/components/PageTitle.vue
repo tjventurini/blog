@@ -1,8 +1,8 @@
 <template>
     <div class="grid grid-cols-12 mb-2">
         <div class="col-span-1">
-            <div class="article-icon moving-gradient-text text-4xl font-bold text-center">
-                #
+            <div class="article-icon text-center text-4xl">
+                <i class="fa fa-hashtag moving-gradient-text align-middle"></i>
             </div>
         </div>
         <div class="col-span-11">

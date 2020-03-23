@@ -2,8 +2,8 @@
     <div class="article-item w-auto">
         <div class="grid grid-cols-12">
             <div class="col-span-1">
-                <div class="article-icon text-center moving-gradient-text text-xl font-bold">
-                    #
+                <div class="article-icon text-center text-xl">
+                    <i class="fa fa-hashtag moving-gradient-text align-middle"></i>
                 </div>
             </div>
             <div class="col-span-11 pb-4">
@@ -22,7 +22,6 @@
         name: "ArticleItem",
         props: ['article'],
         data() {
-            console.log(this.article);
             return {
                 articleImage: '.' + this.article.path + this.article.frontmatter.image
             }

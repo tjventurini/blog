@@ -4,7 +4,8 @@
         <div class="grid grid-cols-12">
             <div class="col-span-8">
                 <PageTitle/>
-                <ArticleList :articles="articles"/>
+                <ArticleList :articles="pagination.pages"/>
+                <Pagination :pagination="pagination"/>
             </div>
             <div class="col-span-4">
 
@@ -16,14 +17,15 @@
 <script>
     import Header from '@theme/components/Header'
     import ArticleList from '@theme/components/ArticleList'
-    import PageTitle from "../components/PageTitle";
+    import PageTitle from "@theme/components/PageTitle"
+    import Pagination from "@theme/components/Pagination"
 
     export default {
-        components: {PageTitle, Header, ArticleList},
+        components: {Pagination, PageTitle, Header, ArticleList},
         computed: {
-            articles() {
+            pagination() {
                 console.log(this.$pagination);
-                return this.$pagination.pages;
+                return this.$pagination;
             }
         }
     }
