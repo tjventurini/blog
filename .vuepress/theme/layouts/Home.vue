@@ -11,6 +11,8 @@
             </div>
             <div class="col-span-4">
 
+                <Sidebar/>
+
             </div>
         </div>
     </div>
@@ -20,9 +22,10 @@
     import Header from '@theme/components/Header'
     import ArticleList from '@theme/components/ArticleList'
     import PageTitle from "../components/PageTitle";
+    import Sidebar from "../components/Sidebar";
 
     export default {
-        components: {PageTitle, Header, ArticleList},
+        components: {Sidebar, PageTitle, Header, ArticleList},
         computed: {
             articles() {
                 return this.$site.pages.filter(function (page) {
