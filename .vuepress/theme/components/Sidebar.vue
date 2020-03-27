@@ -26,19 +26,8 @@
             <h3 class="text-lg font-bold mb-2">Skills</h3>
             <div v-for="skill in this.$themeConfig.skills" class="skill inline-block mb-1">
                 <span
-                        class="moving-gradient-bg text-center px-3 py-1 rounded-lg font-bold text-white text-sm whitespace-no-wrap mx-1"
+                        class="text-center px-3 py-1 rounded-lg font-bold text-sm whitespace-no-wrap mx-1"
                 ><i class="text-xs mr-2" :class="skill.icon"></i>{{ skill.name }}</span>
-            </div>
-        </div>
-
-        <div class="tags pt-4 text-center w-2/3 m-auto">
-            <h3 class="text-lg font-bold mb-2">Tags</h3>
-            <div v-for="tag in $tags.list"
-                 class="inline-block mb-1"
-            >
-                <a :href="tag.path"
-                   class="tag moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm whitespace-no-wrap mx-1"
-                >{{ tag.name }}<i class="fas fa-tag text-xs pl-2"></i></a>
             </div>
         </div>
 
@@ -49,6 +38,17 @@
                    class="moving-gradient-bg px-3 py-1 rounded-lg font-bold text-white">
                     Download<i class="fas fa-file-download ml-3 text-sm"></i>
                 </a>
+            </div>
+        </div>
+
+        <div class="tags pt-4 text-center w-2/3 m-auto">
+            <h3 class="text-lg font-bold mb-2">Tags</h3>
+            <div v-for="tag in $tags.list"
+                 class="inline-block mb-1"
+            >
+                <a :href="tag.path"
+                   class="tag text-center px-3 py-1 font-bold text-sm whitespace-no-wrap mx-1"
+                >{{ tag.name }}<i class="fas fa-tag text-xs pl-2"></i></a>
             </div>
         </div>
 

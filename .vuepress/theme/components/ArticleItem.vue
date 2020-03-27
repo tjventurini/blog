@@ -12,13 +12,13 @@
                 </div>
                 <h3 class="pb-2 text-xl font-bold"><a :href="article.path">{{ article.title }}</a></h3>
                 <div v-html="article.excerpt"></div>
-                <div>
+                <div class="mt-4">
                     <div v-for="tag in article.frontmatter.tags"
                          class="inline-block mb-1"
                     >
-                        <span
-                                class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
-                        >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i></span>
+                        <a :href="$tags.map[tag].path"
+                           class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
+                        >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i></a>
                     </div>
                 </div>
                 <div class="more-button pt-4">
