@@ -17,6 +17,15 @@ module.exports = {
                     },
                     itemPermalink: '/articles/:slug'
                 }
+            ],
+            frontmatters: [
+                {
+                    id: 'tags',
+                    keys: ['tags'],
+                    path: '/tag/',
+                    layout: 'Tags',
+                    scopeLayout: 'Tag'
+                }
             ]
         }],
     ]
