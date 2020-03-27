@@ -12,6 +12,15 @@
                 </div>
                 <h3 class="pb-2 text-xl font-bold"><a :href="article.path">{{ article.title }}</a></h3>
                 <div v-html="article.excerpt"></div>
+                <div>
+                    <div v-for="tag in article.frontmatter.tags"
+                         class="inline-block mb-1"
+                    >
+                        <span
+                                class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
+                        >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i></span>
+                    </div>
+                </div>
                 <div class="more-button pt-4">
                     <a :href="article.path"
                        class="moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm">
@@ -28,6 +37,7 @@
         name: "ArticleItem",
         props: ['article'],
         data() {
+            console.log(this.article);
             return {
                 articleImage: '.' + this.article.path + this.article.frontmatter.image
             }
