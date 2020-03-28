@@ -15,6 +15,7 @@
             <div class="text-center">
                 <div v-for="socialLink in this.$themeConfig.socialLinks" class="social-link inline-block m-1 mt-0">
                     <a :href="socialLink.url"
+                       target="_blank"
                        class="moving-gradient-bg text-center px-3 py-1 rounded-lg text-white">
                         <i :class="socialLink.icon"></i>
                     </a>

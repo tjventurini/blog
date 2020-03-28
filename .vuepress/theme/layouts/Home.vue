@@ -25,8 +25,8 @@
 <script>
     import Header from '@theme/components/Header'
     import ArticleList from '@theme/components/ArticleList'
-    import PageTitle from "../components/PageTitle";
-    import Sidebar from "../components/Sidebar";
+    import PageTitle from "../components/PageTitle"
+    import Sidebar from "../components/Sidebar"
 
     export default {
         components: {Sidebar, PageTitle, Header, ArticleList},

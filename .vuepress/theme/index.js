@@ -1,5 +1,8 @@
 module.exports = {
     plugins: [
+        ['@vuepress/search', {
+            searchMaxSuggestions: 10
+        }],
         ['@vuepress/blog', {
             sitemap: {
                 hostname: 'https://thomasventurini.com',
