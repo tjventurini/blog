@@ -12,9 +12,20 @@
                 </a>
             </div>
             <div class="col-span-1 text-center">
-                <a href="#" class="navigation moving-gradient-text text-center font-bold text-4xl">
+                <button
+                        @click="toggleNavigationOverlay"
+                        class="navigation moving-gradient-text text-center font-bold text-4xl"
+                >
                     <i class="fa fa-bars moving-gradient-text text-3xl"></i>
-                </a>
+                </button>
+            </div>
+        </div>
+        <div
+                class="navigation-overlay fixed w-full h-full top-0 left-0 flex items-center justify-center"
+                :class="{hidden: !showNavigation}"
+        >
+            <div class="navigation-body">
+
             </div>
         </div>
     </div>
@@ -25,6 +36,27 @@
     import SearchBox from '@SearchBox'
 
     export default {
-        components: {Logo, SearchBox}
+        components: {Logo, SearchBox},
+        data() {
+            return {
+                showNavigation: false
+            }
+        },
+        methods: {
+            toggleNavigationOverlay(event) {
+                this.showNavigation = !this.showNavigation
+            }
+        }
     }
 </script>
+
+<style>
+    .navigation-overlay {
+        transition: opacity 0.25s ease;
+    }
+
+    body.navigation-overlay-active {
+        overflow-x: hidden;
+        overflow-y: visible !important;
+    }
+</style>
