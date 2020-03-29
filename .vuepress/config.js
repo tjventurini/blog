@@ -14,6 +14,10 @@ module.exports = {
             {
                 icon: 'fab fa-xing',
                 url: 'https://www.xing.com/profile/Thomas_Venturini/cv'
+            },
+            {
+                icon: 'fab fa-linkedin',
+                url: 'https://www.linkedin.com/in/thomas-venturini-863b20168/'
             }
         ],
         skills: [

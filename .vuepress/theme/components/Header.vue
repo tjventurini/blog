@@ -21,11 +21,30 @@
             </div>
         </div>
         <div
-                class="navigation-overlay fixed w-full h-full top-0 left-0 flex items-center justify-center"
+                class="navigation-overlay fixed bg-white w-full h-full top-0 left-0 flex"
                 :class="{hidden: !showNavigation}"
         >
-            <div class="navigation-body">
+            <div class="navigation-body relative top-0 mx-auto w-full max-w-screen-lg">
+                <button
+                        @click="toggleNavigationOverlay"
+                        class="absolute top-0 right-0 mt-6 mr-8"
+                >
+                    <i class="fa fa-times moving-gradient-text text-4xl"></i>
+                </button>
 
+                <div class="navigation-content mt-20">
+
+                    <div class="navigation text-center mt-4 text-xl">
+                        <a href="/"><i class="fa fa-home moving-gradient-text"></i>&nbsp;Home</a>
+                        | <a href="/articles/"><i class="fa fa-feather-alt moving-gradient-text"></i>&nbsp;Articles</a>
+                        | <a href="/tag/"><i class="fa fa-tags moving-gradient-text"></i>&nbsp;Tags</a>
+                    </div>
+
+                    <div class="search mt-4 mx-auto w-1/3 h-10">
+                        <SearchBox/>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -33,10 +52,12 @@
 
 <script>
     import Logo from '@theme/components/Logo'
-    import SearchBox from '@SearchBox'
+    import Profile from "./Profile";
+    import SocialLinks from "./SocialLinks";
+    import SearchBox from "./SearchBox"
 
     export default {
-        components: {Logo, SearchBox},
+        components: {SocialLinks, Profile, Logo, SearchBox},
         data() {
             return {
                 showNavigation: false
@@ -49,14 +70,3 @@
         }
     }
 </script>
-
-<style>
-    .navigation-overlay {
-        transition: opacity 0.25s ease;
-    }
-
-    body.navigation-overlay-active {
-        overflow-x: hidden;
-        overflow-y: visible !important;
-    }
-</style>
