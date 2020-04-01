@@ -27,7 +27,7 @@
             <div class="navigation-body relative top-0 mx-auto w-full max-w-screen-lg">
                 <button
                         @click="toggleNavigationOverlay"
-                        class="absolute top-0 right-0 mt-6 mr-8"
+                        class="close-navigation-overlay absolute top-0 right-0 mt-6 mr-8"
                 >
                     <i class="fa fa-times moving-gradient-text text-4xl"></i>
                 </button>

@@ -34,7 +34,6 @@
     export default {
         components: {PageTitle, Header},
         data() {
-            console.log(this);
             return {};
         }
     }

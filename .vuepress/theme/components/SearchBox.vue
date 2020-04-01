@@ -26,7 +26,7 @@
                     :key="i"
                     class="suggestion"
                     :class="{ focused: i === focusIndex }"
-                    @mousedown="go(i)"
+                    @mousedown="closeNavigationAndGo(i)"
                     @mouseenter="focus(i)"
             >
                 <a
@@ -49,7 +49,13 @@
 
     export default {
         name: "SearchBox",
-        extends: SearchBox
+        extends: SearchBox,
+        methods: {
+            closeNavigationAndGo(i) {
+                document.querySelector('.close-navigation-overlay').dispatchEvent(new Event('click'))
+                this.go(i)
+            }
+        }
     }
 </script>
 

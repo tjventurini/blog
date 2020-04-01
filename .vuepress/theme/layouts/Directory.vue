@@ -24,7 +24,6 @@
         components: {Pagination, PageTitle, Header, ArticleList},
         computed: {
             pagination() {
-                console.log(this.$pagination);
                 return this.$pagination;
             }
         }

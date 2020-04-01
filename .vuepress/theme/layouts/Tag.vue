@@ -27,7 +27,6 @@
     export default {
         components: {ArticleList, PageTitle, Header},
         data() {
-            console.log(this)
             return {};
         }
     }
