@@ -4,6 +4,7 @@
     <option name="languageLevel" value="ES6" />
   </component>
   <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/.vuepress/theme/styles/code-highlighting.sass" />
     <file url="file://$PROJECT_DIR$/.vuepress/theme/styles/palette.styl" />
   </component>
 </project>

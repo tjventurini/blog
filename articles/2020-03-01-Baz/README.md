@@ -11,3 +11,15 @@ Hello World
 <!-- more -->
 
 Hello again :) 
+
+```php
+<?php
+
+echo 'baz';
+```
+
+```
+<?php
+
+echo 'baz';
+```

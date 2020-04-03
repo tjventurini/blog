@@ -15,10 +15,10 @@
 </template>
 
 <script>
-    import Header from '@theme/components/Header'
-    import ArticleList from '@theme/components/ArticleList'
-    import PageTitle from "@theme/components/PageTitle"
-    import Pagination from "@theme/components/Pagination"
+    import Header from '../components/Header'
+    import ArticleList from '../components/ArticleList'
+    import PageTitle from "../components/PageTitle"
+    import Pagination from "../components/Pagination"
 
     export default {
         components: {Pagination, PageTitle, Header, ArticleList},

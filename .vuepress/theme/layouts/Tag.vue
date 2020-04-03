@@ -20,7 +20,7 @@
 </template>
 
 <script>
-    import Header from '@theme/components/Header'
+    import Header from '../components/Header'
     import PageTitle from "../components/PageTitle";
     import ArticleList from "../components/ArticleList";
 

@@ -3,10 +3,10 @@
         <Header/>
         <div class="grid grid-cols-12">
             <div class="col-span-8">
-                <PageTitle/>
+                <PageTitle title="404 Page not found"/>
                 <div class="grid grid-cols-12">
                     <div class="col-start-2 col-span-11">
-                        <Content/>
+                        <div class="max-w-md mx-auto" v-html="notFoundImage"></div>
 
                         <div class="mt-4">
                             <div v-for="tag in $page.frontmatter.tags"
@@ -33,13 +33,17 @@
 
     export default {
         components: {PageTitle, Header},
-        data() {
-            return {};
+        computed: {
+            notFoundImage: function () {
+                // get images from theme config
+                const images = this.$themeConfig.notFoundImages;
+
+                // get random index
+                let index = Math.floor(Math.random() * images.length)
+
+                // return image by index
+                return images[index];
+            }
         }
     }
 </script>
-
-<style src="prismjs/themes/prism-tomorrow.css"></style>
-
-<style lang="sass" src="../styles/code-highlighting.sass"></style>
-

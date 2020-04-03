@@ -59,6 +59,11 @@ module.exports = {
             }
         ],
         cv: 'downloads/cv.pdf',
+        notFoundImages: [
+            `<div style="width:100%;height:0;padding-bottom:145%;position:relative;"><iframe src="https://giphy.com/embed/VwoJkTfZAUBSU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/89a-eightninea-VwoJkTfZAUBSU">via GIPHY</a></p>`,
+            `<div style="width:100%;height:0;padding-bottom:84%;position:relative;"><iframe src="https://giphy.com/embed/9J7tdYltWyXIY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/internet-google-chrone-9J7tdYltWyXIY">via GIPHY</a></p>`,
+            `<div style="width:100%;height:0;padding-bottom:85%;position:relative;"><iframe src="https://giphy.com/embed/5f2mqsGTHpe5a" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/404-5f2mqsGTHpe5a">via GIPHY</a></p>`
+        ]
     },
     head: [
         ['link', {rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png"}],
