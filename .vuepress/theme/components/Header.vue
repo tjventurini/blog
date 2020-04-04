@@ -21,7 +21,7 @@
             </div>
         </div>
         <div
-                class="navigation-overlay fixed bg-white w-full h-full top-0 left-0 flex .z-50"
+                class="navigation-overlay fixed bg-white w-full h-full top-0 left-0 flex z-50"
                 :class="{hidden: !showNavigation}"
         >
             <div class="navigation-body relative top-0 mx-auto w-full max-w-screen-lg">
