@@ -15,7 +15,7 @@ As I have already a lot of experience in using content management systems as [Mo
 
 ## Vue
 
-Doing something in the frontend again turned out to be a lot of fun. Although I have spent most playing with the mechanics of vue and vuepress and did not so much of actual design - as you can clearly see 😉
+Doing something in the frontend again turned out to be a lot of fun. Although I have spent most of the time playing with the mechanics of vue and vuepress and did not so much of actual design - as you can clearly see 😉
 
 ## Markdown
 
