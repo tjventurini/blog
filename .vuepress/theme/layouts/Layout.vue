@@ -5,7 +5,16 @@
             <div class="col-span-12 lg:col-span-8 pb-4">
                 <PageTitle/>
                 <div class="grid grid-cols-6 sm:grid-cols-8">
-                    <div class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7">
+                    <div class="col-span-1 text-center">
+                        <div class="article-date text-center text-xl my-2">
+                            <i class="fa fa-calendar-day moving-gradient-text"></i>
+                        </div>
+                    </div>
+                    <div class="col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7">
+
+                        <div class="date font-bold text-xl my-2">
+                            {{ new Date($page.frontmatter.date).toLocaleDateString() }}
+                        </div>
 
                         <div class="content">
                             <Content/>
