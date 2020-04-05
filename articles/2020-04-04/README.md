@@ -2,6 +2,7 @@
 title: 404 Page ... found!
 description: My new website is here!
 date: 2020-04-04
+permalink: 404-page-found
 ---
 
 Welcome traveler of the world wide web and welcome to my new website! If you have been here before, then you might have noticed that I changed a lot and reduced the design to a minimum. Let me give you a quick tour on what was changed and why 😁
