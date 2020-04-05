@@ -4,6 +4,7 @@
                 ref="input"
                 aria-label="Search"
                 :value="query"
+                class="w-full mt-8"
                 :class="{ 'focused': focused }"
                 :placeholder="placeholder"
                 autocomplete="off"
@@ -71,6 +72,14 @@
             width: 100%
             height: 100%
             background-position: 0.5rem center
+            left: 0
+            @apply bg-gray-200
+
+            &:focus, .focus
+                border-radius: 0.5rem
+                width: 100%
+                height: 100%
+                background-position: 0.5rem center
 
         .suggestions
             width: 100%

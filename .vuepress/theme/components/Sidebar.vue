@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar">
+    <div class="sidebar py-8 bg-gray-200 lg:bg-white">
 
         <Profile/>
 

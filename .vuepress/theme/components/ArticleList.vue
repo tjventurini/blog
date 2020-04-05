@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import ArticleItem from '@theme/components/ArticleItem'
+    import ArticleItem from '../components/ArticleItem'
 
     export default {
         name: "ArticleList",

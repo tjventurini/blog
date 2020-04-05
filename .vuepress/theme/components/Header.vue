@@ -1,17 +1,18 @@
 <template>
     <div class="header mx-auto py-4">
         <div class="grid grid-cols-12">
-            <div class="col-span-1 align-middle">
+            <div class="col-span-3 sm:col-span-2 md:col-span-2 lg:col-span-1 align-middle">
                 <a href="/">
                     <Logo/>
                 </a>
             </div>
-            <div class="col-span-10">
+            <div class="col-span-7 sm:col-span-8 lg:col-span-10">
                 <a href="/">
-                    <h1><span class="align-middle heading-10 font-bold text-4xl">Thomas Venturini</span></h1>
+                    <h1 class="hidden sm:block"><span
+                            class="align-middle heading-10 font-bold text-4xl">{{ $site.title }}</span></h1>
                 </a>
             </div>
-            <div class="col-span-1 text-center">
+            <div class="col-span-2 sm:col-span-2 md:col-span-2 lg:col-span-1 text-center">
                 <button
                         @click="toggleNavigationOverlay"
                         class="navigation moving-gradient-text text-center font-bold text-4xl"
@@ -34,13 +35,13 @@
 
                 <div class="navigation-content mt-20">
 
-                    <div class="navigation text-center mt-4 text-xl">
+                    <div class="navigation text-center mt-8 text-xl">
                         <a href="/"><i class="fa fa-home moving-gradient-text"></i>&nbsp;Home</a>
                         | <a href="/articles/"><i class="fa fa-feather-alt moving-gradient-text"></i>&nbsp;Articles</a>
                         | <a href="/tag/"><i class="fa fa-tags moving-gradient-text"></i>&nbsp;Tags</a>
                     </div>
 
-                    <div class="search mt-4 mx-auto w-1/3 h-10">
+                    <div class="search sm:mt-4 mx-auto w-2/3 sm:w-1/3 h-10">
                         <SearchBox/>
                     </div>
 
