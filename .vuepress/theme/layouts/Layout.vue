@@ -6,7 +6,10 @@
                 <PageTitle/>
                 <div class="grid grid-cols-6 sm:grid-cols-8">
                     <div class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7">
-                        <Content/>
+
+                        <div class="content">
+                            <Content/>
+                        </div>
 
                         <div class="mt-4">
                             <div v-for="tag in $page.frontmatter.tags"
@@ -45,4 +48,18 @@
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 
 <style lang="sass" src="../styles/code-highlighting.sass"></style>
+
+<style lang="sass">
+    .content
+        h2
+            @apply font-bold my-4
+            a
+                @apply no-underline
+
+        a
+            @apply underline text-gray-500
+
+        p
+            @apply mb-4
+</style>
 
