@@ -4,7 +4,7 @@
                 ref="input"
                 aria-label="Search"
                 :value="query"
-                class="w-full mt-8"
+                class="w-full"
                 :class="{ 'focused': focused }"
                 :placeholder="placeholder"
                 autocomplete="off"
@@ -18,7 +18,7 @@
         >
         <ul
                 v-if="showSuggestions"
-                class="suggestions"
+                class="suggestions top-8"
                 :class="{ 'align-right': alignRight }"
                 @mouseleave="unfocus"
         >

@@ -41,7 +41,7 @@
                         | <a href="/tag/"><i class="fa fa-tags moving-gradient-text"></i>&nbsp;Tags</a>
                     </div>
 
-                    <div class="search sm:mt-4 mx-auto w-2/3 sm:w-1/3 h-10">
+                    <div class="search mt-12 mx-auto w-2/3 sm:w-1/3 h-10">
                         <SearchBox/>
                     </div>
 
