@@ -6,7 +6,7 @@
                     <i class="fa fa-hashtag moving-gradient-text align-middle"></i>
                 </div>
             </div>
-            <div class="col-span-5 sm:col-span-7 pb-4">
+            <div class="col-span-4 sm:col-span-6 pb-4">
                 <div v-if="article.frontmatter.image" class="article-image pt-2 pb-4">
                     <a :href="article.path"><img class="rounded-lg" :src="article.frontmatter.image"/></a>
                 </div>

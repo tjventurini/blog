@@ -1,8 +1,8 @@
 <template>
-    <div class="page mx-auto max-w-screen-lg text-gray-700">
+    <div class="page max-w-screen-lg mx-auto text-gray-700">
         <Header/>
         <div class="grid grid-cols-12">
-            <div class="col-span-8">
+            <div class="col-span-12 lg:col-span-8 pb-4">
                 <PageTitle title="404 Page not found"/>
                 <div class="grid grid-cols-12">
                     <div class="col-start-2 col-span-11">
@@ -20,7 +20,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-4">
+            <div class="col-span-12 lg:col-span-4">
+
+                <Sidebar/>
 
             </div>
         </div>
@@ -30,9 +32,10 @@
 <script>
     import Header from '../components/Header'
     import PageTitle from "../components/PageTitle";
+    import Sidebar from "../components/Sidebar"
 
     export default {
-        components: {PageTitle, Header},
+        components: {PageTitle, Header, Sidebar},
         computed: {
             notFoundImage: function () {
                 // get images from theme config
