@@ -29,7 +29,7 @@ npm run dev
 
 ... and that's it, I'm already all set to write a new article.
 
-This is super handy because I like to play a lot with the code on my local machines and since I am around with heavy tools ⚒ sometimes, it can happen that I mess up a lot. But thats okey, no client projects involved so everything good 😉 Anyways, I want to setup my blog every time that happens. So in short, this setup makes it way more easy to keep my blog going in the long run.
+This is super handy because I like to play a lot with the code on my local machine and since I am around with heavy tools ⚒ sometimes, it can happen that I mess up some stuff. But thats okey, no client projects involved, so everything good 😉 Anyways, I don't want to setup my blog every time that happens. So in short, this setup makes it way more easy to keep my blog going in the long run.
 
 ## A new Playground
 
