@@ -1,5 +1,11 @@
 module.exports = {
     plugins: [
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-36004715-1' // UA-00000000-0
+            }
+        ],
         ['@vuepress/search', {
             searchMaxSuggestions: 10
         }],
