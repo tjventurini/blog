@@ -5,8 +5,14 @@
             <div class="col-span-12 lg:col-span-8 pb-4">
                 <PageTitle/>
                 <div class="grid grid-cols-6 sm:grid-cols-8">
+                    <div v-if="$page.frontmatter.cover" class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7">
+                        <div class="article-cover pt-2 pb-4">
+                            <img class="rounded-lg" :src="$page.frontmatter.cover"/>
+                        </div>
+                    </div>
+                    <div v-if="$page.frontmatter.cover" class="col-span-1 lg:hidden"></div>
                     <div class="col-span-1 text-center">
-                        <div class="article-date text-center text-xl my-2">
+                        <div class="article-date text-center text-xl my-1">
                             <i class="fa fa-calendar-day moving-gradient-text"></i>
                         </div>
                     </div>
@@ -47,10 +53,7 @@
     import Sidebar from "../components/Sidebar"
 
     export default {
-        components: {PageTitle, Header, Sidebar},
-        data() {
-            return {};
-        }
+        components: {PageTitle, Header, Sidebar}
     }
 </script>
 
