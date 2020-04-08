@@ -8,7 +8,7 @@ tags:
     - laravel
 ---
 
-I see a lot of packages that could make use of Laravel facades to make their services more accessible. But I completely agree with everyone that would say that the Laravel facades documentation is kinda hard to read. So here is a quicker version to get you started.
+I see a lot of packages that could make use of Laravel facades to make their services more accessible. But I completely agree with everyone who would say that the Laravel facades documentation is kinda hard to read. So here is a quicker version to get you started.
 
 <!-- more -->
 
