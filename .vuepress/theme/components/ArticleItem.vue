@@ -5,15 +5,19 @@
                 <div class="article-icon text-center text-xl">
                     <i class="fa fa-hashtag moving-gradient-text align-middle"></i>
                 </div>
-                <div class="article-date text-center text-xl my-2">
-                    <i class="fa fa-calendar-day moving-gradient-text"></i>
-                </div>
             </div>
-            <div class="col-span-4 sm:col-span-6 pb-4">
+            <div class="col-span-5 sm:col-span-7">
                 <div v-if="article.frontmatter.image" class="article-image pt-2 pb-4">
                     <a :href="article.path"><img class="rounded-lg" :src="article.frontmatter.image"/></a>
                 </div>
                 <h3 class="pb-2 text-xl font-bold"><a :href="article.path">{{ article.title }}</a></h3>
+            </div>
+            <div class="col-span-1">
+                <div class="article-date text-center text-xl my-2">
+                    <i class="fa fa-calendar-day moving-gradient-text"></i>
+                </div>
+            </div>
+            <div class="col-span-5 sm:col-span-7 pb-4">
                 <div class="my-2 font-bold">
                     {{ new Date(article.frontmatter.date).toLocaleDateString() }}
                 </div>
