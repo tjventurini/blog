@@ -1,5 +1,5 @@
 ---
-title: x-rate-limit-ip Header explained
+title: x-rate-limit-ip Header Explained
 description: Get to know the x-rate-limit-ip http header.
 date: 2020-04-07
 permalink: x-rate-limit-ip-header-explained
