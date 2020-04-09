@@ -21,7 +21,7 @@ namespace App\Services;
 
 class FooService
 {
-    public int $counter;
+    private int $counter;
 
     public __construct(int $initial = 0) {
         $this->counter = $initial;
@@ -90,11 +90,11 @@ class Foo extends Facade
 Awesome, that's it! 🤩 From now on you can use your facade like the following.
 
 ```php
-Foo::getCounter(); // 3
+Foo::getCounter(); // $counter == 3
 
-Foo::add(2);
+Foo::add(2); // $counter += 2
 
-Foo::getCounter(); // 2
+Foo::getCounter(); // $counter == 5
 ```
 
 As you can see Laravel facades are actually quite easy to set up and to use - so you should do so! 😉
