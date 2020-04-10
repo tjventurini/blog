@@ -7,7 +7,7 @@
                 <div class="grid grid-cols-6 sm:grid-cols-8">
                     <div v-if="$page.frontmatter.cover" class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7">
                         <div class="article-cover pt-2 pb-4">
-                            <img class="rounded-lg" :src="$page.frontmatter.cover"/>
+                            <img class="rounded-lg w-full" :src="$page.frontmatter.cover"/>
                         </div>
                     </div>
                     <div v-if="$page.frontmatter.cover" class="col-span-1 lg:hidden"></div>

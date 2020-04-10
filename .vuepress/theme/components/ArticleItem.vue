@@ -1,12 +1,12 @@
 <template>
     <div class="article-item w-auto mb-4">
         <div class="grid grid-cols-6 sm:grid-cols-8">
-            <div v-if="article.frontmatter.cover" class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-7">
+            <div v-if="article.frontmatter.cover" class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6">
                 <div class="article-cover pt-2 pb-4">
-                    <a :href="article.path"><img class="rounded-lg" :src="article.frontmatter.cover"/></a>
+                    <a :href="article.path"><img class="rounded-lg w-full" :src="article.frontmatter.cover"/></a>
                 </div>
             </div>
-            <div v-if="article.frontmatter.cover" class="col-span-1 sm:hidden">
+            <div v-if="article.frontmatter.cover" class="col-span-1">
             </div>
             <div class="col-span-1">
                 <div class="article-icon text-center text-xl">
