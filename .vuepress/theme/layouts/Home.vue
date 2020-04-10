@@ -8,7 +8,7 @@
 
                 <ArticleList :articles="articles"/>
 
-                <div v-if="articles.length > 5" class="more-button text-center">
+                <div class="more-button text-center mb-4">
                     <a class="font-bold moving-gradient-bg text-white p-2 rounded-lg" href="/articles/">See all
                         articles</a>
                 </div>
