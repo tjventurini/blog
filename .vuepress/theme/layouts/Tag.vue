@@ -18,6 +18,7 @@
 
             </div>
         </div>
+        <cookie-law theme="dark-lime"></cookie-law>
     </div>
 </template>
 
@@ -26,9 +27,10 @@
     import PageTitle from "../components/PageTitle";
     import ArticleList from "../components/ArticleList";
     import Sidebar from "../components/Sidebar"
+    import CookieLaw from "vue-cookie-law"
 
     export default {
-        components: {ArticleList, PageTitle, Header, Sidebar},
+        components: {ArticleList, PageTitle, Header, Sidebar, CookieLaw},
         data() {
             return {};
         }

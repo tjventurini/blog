@@ -21,6 +21,7 @@
         "vuepress": "^1.4.0"
     },
     "dependencies": {
-        "tailwindcss": "^1.2.0"
+        "tailwindcss": "^1.2.0",
+        "vue-cookie-law": "^1.13.3"
     }
 }
