@@ -13,7 +13,6 @@
 
             </div>
         </div>
-        <cookie-law theme="dark-lime"></cookie-law>
     </div>
 </template>
 
@@ -23,10 +22,9 @@
     import PageTitle from "../components/PageTitle"
     import Pagination from "../components/Pagination"
     import Sidebar from "../components/Sidebar"
-    import CookieLaw from "vue-cookie-law"
 
     export default {
-        components: {Pagination, PageTitle, Header, ArticleList, Sidebar, CookieLaw},
+        components: {Pagination, PageTitle, Header, ArticleList, Sidebar},
         computed: {
             pagination() {
                 return this.$pagination;
