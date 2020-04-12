@@ -73,5 +73,11 @@
 
         p
             @apply mb-4
+
+            code 
+                @apply bg-gray-200 p-1 px-2 rounded text-red-400 text-sm border border-gray-400
+
+        img
+            @apply rounded-lg
 </style>
 
