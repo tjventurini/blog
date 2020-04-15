@@ -68,14 +68,17 @@
             a
                 @apply no-underline
 
-        a
-            @apply underline text-gray-500
-
         p
             @apply mb-4
 
             code 
                 @apply bg-gray-200 p-1 px-2 rounded text-red-400 text-sm border border-gray-400
+
+            a
+                @apply underline text-gray-500
+
+                svg
+                    @apply ml-1
 
         img
             @apply rounded-lg

@@ -47,3 +47,11 @@
         }
     }
 </script>
+
+<style lang="sass">
+    .article-item
+        div 
+            p 
+                a
+                    @apply underline text-gray-500
+</style>
