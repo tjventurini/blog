@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+---
+title: ${1:Hello World!}
+description: ${2:Some Description about the article.}
+permalink: ${3:the-permalink-of-your-article}
+date: ${4:2020-04-16}
+cover: /covers/${5:name-of-the-cover-image-file.png}
+tags:
+    - ${6:tag}
+---
+
+${7:The excerpt of your article.}
+
+<!-- more -->
+
+${8:The actual body of your article.}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>article</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.markdown</scope>
+</snippet>
