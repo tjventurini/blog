@@ -2,7 +2,7 @@
 title: 404 Page ... found!
 description: My new website is here!
 date: 2020-04-04
-permalink: forth-of-april-page-found
+permalink: 404-page-found
 cover: /covers/404-page-found.png 
 ---
 
