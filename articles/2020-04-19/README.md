@@ -8,7 +8,7 @@ tags:
     - ubuntu
 ---
 
-Yesterday I had to figure out why the f*** the microphone of my headset was not available in the audio settings of my PCs Ubuntu system and how to fix it. Here is how I could fix it.
+Yesterday I had to figure out why the f*** the microphone of my headset was not available in the audio settings of my PCs Ubuntu system and how to fix it. 
 
 <!-- more -->
 
