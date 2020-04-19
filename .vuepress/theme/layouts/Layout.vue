@@ -74,11 +74,14 @@
             code 
                 @apply bg-gray-200 p-1 px-2 rounded text-red-400 text-sm border border-gray-400
 
-            a
-                @apply underline text-gray-500
+        ul 
+            @apply list-disc px-8
 
-                svg
-                    @apply ml-1
+        a
+            @apply underline text-gray-500
+
+            svg
+                @apply ml-1
 
         img
             @apply rounded-lg
