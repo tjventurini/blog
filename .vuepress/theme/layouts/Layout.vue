@@ -2,7 +2,7 @@
     <div class="page max-w-screen-lg mx-auto text-gray-700">
         <Header/>
         <div class="grid grid-cols-12">
-            <div class="col-span-12 lg:col-span-8 pb-4">
+            <article class="col-span-12 lg:col-span-8 pb-4">
                 <PageTitle/>
                 <div class="grid grid-cols-6 sm:grid-cols-8">
                     <div v-if="$page.frontmatter.cover" class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
             <div class="col-span-12 lg:col-span-4">
 
                 <Sidebar/>
