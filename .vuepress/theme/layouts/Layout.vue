@@ -59,7 +59,6 @@
         components: {PageTitle, Header, Sidebar},
         methods: {
             mailchimp: function() {
-                console.log('mailchimp')
                 window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"ca1aaebb1c402c379aa8edf82","lid":"1d24155121","uniqueMethods":true}) })
             }
         },
