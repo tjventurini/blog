@@ -45,8 +45,8 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false" @load="mailchimp()"></script>
-        
+        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
     </div>
 </template>
 
@@ -62,6 +62,9 @@
                 console.log('mailchimp')
                 window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"ca1aaebb1c402c379aa8edf82","lid":"1d24155121","uniqueMethods":true}) })
             }
+        },
+        mounted() {
+            this.mailchimp()
         }
     }
 </script>
