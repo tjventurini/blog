@@ -3,7 +3,7 @@ title: Quick Intro to Laravel Facades
 description: The shortest introduction to Laravel Facades I could write.
 date: 2020-04-08
 permalink: quick-intro-to-laravel-facades
-cover: /covers/quick-intro-to-laravel-facades.png
+image: /covers/quick-intro-to-laravel-facades.png
 tags:
     - laravel
 ---

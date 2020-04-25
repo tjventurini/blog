@@ -9,6 +9,13 @@ module.exports = {
         ['@vuepress/search', {
             searchMaxSuggestions: 10
         }],
+        ['vuepress-plugin-autometa',{
+            site: {
+                name: 'Thomas Venturini',
+                twitter: 'tjventurini',
+            },
+            canonical_base: 'https://thomasventurini.com',
+        }],
         ['@vuepress/blog', {
             sitemap: {
                 hostname: 'https://thomasventurini.com',

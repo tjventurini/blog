@@ -3,7 +3,7 @@ title: Make Use of Array Mappings!
 description: Avoid long if-elseif-elseif-else and switch blocks in your code and rather make use of array mappings!
 permalink: make-use-of-array-mappings
 date: 2020-04-25
-cover: /covers/make-use-of-array-mappings.png
+image: /covers/make-use-of-array-mappings.png
 tags:
     - php
     - laravel

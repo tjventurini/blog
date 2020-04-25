@@ -3,7 +3,7 @@ title: Running Laravel Queue on Small Servers
 description: How to handle huge amounts of jobs in the queue on small servers.
 permalink: running-laravel-queue-on-small-servers
 date: 2020-04-12
-cover: /covers/running-laravel-queue-on-small-servers.png
+image: /covers/running-laravel-queue-on-small-servers.png
 tags:
     - mysql
     - redis

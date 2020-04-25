@@ -3,7 +3,7 @@ title: Make Use of Grouped Use Statements in PHP7+
 description: Since php7 we can use grouped use statements to make multiple classes of a namespace available through a single use statement.
 permalink: grouped-or-multiple-use-statements-in-php7
 date: 2020-04-17
-cover: /covers/grouped-use-statements-in-php7.png
+image: /covers/grouped-use-statements-in-php7.png
 tags:
     - php
 ---

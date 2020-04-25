@@ -3,7 +3,7 @@ title: The Most Common Composer Commands
 description: A list of the most common composer commands.
 permalink: the-most-common-composer-commands
 date: 2020-04-16
-cover: /covers/common-composer-commands.png
+image: /covers/common-composer-commands.png
 tags:
     - composer
     - php

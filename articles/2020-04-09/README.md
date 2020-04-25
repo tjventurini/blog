@@ -3,7 +3,7 @@ title: A User VS. An User
 description: This typo all over the documentations I read is bothering me. Also I kinda find it funny.
 permalink: a-user-vs-an-user
 date: 2020-04-09
-cover: /covers/a-user-vs-an-user.png
+image: /covers/a-user-vs-an-user.png
 tags:
     - documentation
     - english

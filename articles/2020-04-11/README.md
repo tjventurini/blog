@@ -3,7 +3,7 @@ title: Search and Replace in Large Files
 description: How to search and replace strings in large files.
 permalink: search-and-replace-in-large-files
 date: 2020-04-11
-cover: /covers/search-and-replace-in-large-files.png
+image: /covers/search-and-replace-in-large-files.png
 tags:
     - console
     - bash

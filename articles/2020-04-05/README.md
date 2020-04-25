@@ -3,7 +3,7 @@ title: Set Server Timezone on Ubuntu
 description: How to set the timezone on an Ubuntu server.
 date: 2020-04-05
 permalink: set-server-timezone-on-ubuntu
-cover: /covers/set-server-timezone-on-ubuntu.png
+image: /covers/set-server-timezone-on-ubuntu.png
 tags:
     - ubuntu
 ---

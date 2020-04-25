@@ -3,7 +3,7 @@ title: How to Read Log-Files
 description: Work with log files using the commands less and tail.
 permalink: how-to-read-log-files
 date: 2020-04-14
-cover: /covers/how-to-read-log-files.png
+image: /covers/how-to-read-log-files.png
 tags:
     - bash
     - ubuntu

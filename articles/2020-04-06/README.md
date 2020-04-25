@@ -3,7 +3,7 @@ title: Fix Crashing MySQL Server
 description: Fix most of your MySQL issues with this little setting.
 date: 2020-04-06
 permalink: fix-crashing-mysql-server
-cover: /covers/fix-crashing-mysql-server.png
+image: /covers/fix-crashing-mysql-server.png
 tags:
     - mysql
 ---
