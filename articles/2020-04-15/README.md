@@ -1,7 +1,7 @@
 ---
 title: Auto-Completion for Laravel Facades
 description: Sometimes the Laravel ide-helper package can't help you with getting the auto-completion for your facades to work. So here I have a nice and easy way to handle this when the ide-helper package let's you down.
-permalink: auto-completion-for-laravel-facades
+permalink: articles/auto-completion-for-laravel-facades
 date: 2020-04-15
 image: /covers/auto-completion-for-laravel-facades.png
 tags: 

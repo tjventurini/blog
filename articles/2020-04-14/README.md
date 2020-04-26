@@ -1,7 +1,7 @@
 ---
 title: How to Read Log-Files
 description: Work with log files using the commands less and tail.
-permalink: how-to-read-log-files
+permalink: articles/how-to-read-log-files
 date: 2020-04-14
 image: /covers/how-to-read-log-files.png
 tags:

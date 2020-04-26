@@ -19,7 +19,8 @@
         "node-sass": "^4.13.1",
         "sass-loader": "^7.3.1",
         "vuepress": "^1.4.0",
-        "vuepress-plugin-autometa": "^0.1.13"
+        "vuepress-plugin-autometa": "^0.1.13",
+        "vuepress-plugin-rss": "^2.0.0"
     },
     "dependencies": {
         "tailwindcss": "^1.2.0"

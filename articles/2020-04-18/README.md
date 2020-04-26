@@ -1,7 +1,7 @@
 ---
 title: $fillable vs $guarded on Laravel Models
 description: Everything to know about the $fillable vs $guarded on Laravel Models discussion.
-permalink: fillable-vs-guarded-on-laravel-models
+permalink: articles/fillable-vs-guarded-on-laravel-models
 date: 2020-04-18
 image: /covers/fillable-vs-guarded-on-laravel-models.png
 tags:

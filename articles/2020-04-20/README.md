@@ -1,7 +1,7 @@
 ---
 title: How to Structure your Classes
 description: Here I want to give you an idea on how to structure your classes in PHP.
-permalink: how-to-structure-your-classes
+permalink: articles/how-to-structure-your-classes
 date: 2020-04-20
 image: /covers/structuring-your-classes.png
 tags:

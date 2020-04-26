@@ -2,7 +2,7 @@
 title: Fix Missing Audio Input Device in Ubuntu
 description: I recently had to 
 date: 2020-04-19
-permalink: fix-missing-audio-input-device-in-ubuntu
+permalink: articles/fix-missing-audio-input-device-in-ubuntu
 image: /covers/fix-missing-audio-input-device-in-ubuntu.png
 tags:
     - ubuntu

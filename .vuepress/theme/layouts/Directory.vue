@@ -27,7 +27,7 @@
         components: {Pagination, PageTitle, Header, ArticleList, Sidebar},
         computed: {
             pagination() {
-                return this.$pagination;
+                return this.$pagination
             }
         }
     }

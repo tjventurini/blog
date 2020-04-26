@@ -1,7 +1,7 @@
 ---
 title: Search and Replace in Large Files
 description: How to search and replace strings in large files.
-permalink: search-and-replace-in-large-files
+permalink: articles/search-and-replace-in-large-files
 date: 2020-04-11
 image: /covers/search-and-replace-in-large-files.png
 tags:

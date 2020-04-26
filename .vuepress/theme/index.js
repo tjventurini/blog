@@ -14,7 +14,7 @@ module.exports = {
                 name: 'Thomas Venturini',
                 twitter: 'tjventurini',
             },
-            canonical_base: 'https://thomasventurini.com',
+            canonical_base: 'https://thomasventurini.com'
         }],
         ['@vuepress/blog', {
             sitemap: {
@@ -30,8 +30,7 @@ module.exports = {
                     pagination: {
                         lengthPerPage: 5,
                         layout: 'Directory'
-                    },
-                    itemPermalink: '/articles/:slug'
+                    }
                 }
             ],
             frontmatters: [
@@ -44,5 +43,12 @@ module.exports = {
                 }
             ]
         }],
+        ['vuepress-plugin-rss', {
+            base_url: '/', // required
+            site_url: 'https://thomasventurini.com', // required
+            filter: frontmatter => frontmatter.date <= new Date(),
+            count: 100
+        }
+      ]
     ]
 }

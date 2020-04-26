@@ -1,7 +1,7 @@
 ---
 title: The easiest way to create slugs in Laravel
 description: Here is another way to create slugs out of strings that might come in handy.
-permalink: the-easiest-way-to-create-slugs-in-laravel
+permalink: articles/the-easiest-way-to-create-slugs-in-laravel
 date: 2020-04-10
 image: /covers/the-easiest-way-to-create-slugs-in-laravel.png
 tags:
