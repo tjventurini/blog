@@ -6,7 +6,7 @@
         </div>
         <div class="text-center col-span-3 sm:col-span-1">
             <span class="moving-gradient-bg text-white text-center px-4 py-2 rounded-lg font-bold">Page {{
-                pagination.paginationIndex + 1 }} of {{ pagination.length }}</span>
+                pagination.paginationIndex }} of {{ pagination.pages.length }}</span>
         </div>
         <div class="next">
             <a v-if="pagination.hasNext" :href="pagination.nextLink"

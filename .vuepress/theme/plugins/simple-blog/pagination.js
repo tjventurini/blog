@@ -67,10 +67,17 @@ export default ({ Vue }) => {
                     nextLink = options.posts.path + nextIndex + '/'
                 }
 
+                // expose page index for pagination component in FE
+                let paginationIndex = null
+                if (this.$page.frontmatter.pagination) {
+                    paginationIndex = this.$page.frontmatter.pagination.page
+                }
+
                 // return the object
                 return {
                     posts: posts,
                     pages: pages,
+                    paginationIndex: paginationIndex,
                     hasPrev: hasPrev,
                     prevLink: prevLink,
                     hasNext: hasNext,
