@@ -32,17 +32,10 @@
         components: {Sidebar, PageTitle, Header, ArticleList},
         computed: {
             articles() {
-                return this.$site.pages.filter(function (page) {
-                    return /^\/articles\//.test(page.regularPath)
-                })
-                    .filter((page) => (page.title))
-                    .sort((prev, next) => {
-                        const dayjs = require('dayjs');
-                        const prevTime = dayjs(prev.frontmatter.date);
-                        const nextTime = dayjs(next.frontmatter.date);
-                        return prevTime - nextTime > 0 ? -1 : 1;
-                    })
-                    .slice(0, 5);
+                console.log(this)
+                console.log(this.$pagination)
+                // console.log($pagination.pages())
+                // return this.$pagination.pages()
             }
         }
     }

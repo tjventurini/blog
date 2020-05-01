@@ -20,19 +20,6 @@ module.exports = {
             sitemap: {
                 hostname: 'https://thomasventurini.com',
             },
-            directories: [
-                {
-                    id: 'articles',
-                    title: 'Articles',
-                    dirname: 'articles',
-                    path: '/articles/',
-                    layout: 'Directory',
-                    pagination: {
-                        lengthPerPage: 5,
-                        layout: 'Directory'
-                    }
-                }
-            ],
             frontmatters: [
                 {
                     id: 'tags',
@@ -48,7 +35,22 @@ module.exports = {
             site_url: 'https://thomasventurini.com', // required
             filter: frontmatter => frontmatter.date <= new Date(),
             count: 100
-        }
-      ]
+        }],
+        [require('./plugins/simple-blog/index.js'), {
+            home: {
+                title: 'Home',
+                frontmatter: {
+                    layout: 'Home'
+                }
+            },
+            posts: {
+                title: 'Articles Page #',
+                path: '/articles/',
+                frontmatter: {
+                    layout: 'Directory'
+                }
+            },
+            limit: 5
+        }]
     ]
 }

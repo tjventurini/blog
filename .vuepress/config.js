@@ -58,7 +58,7 @@ module.exports = {
                 icon: 'fab fa-linux'
             }
         ],
-        cv: 'downloads/cv.pdf',
+        cv: '/downloads/cv.pdf',
         notFoundImages: [
             `<div style="width:100%;height:0;padding-bottom:145%;position:relative;"><iframe src="https://giphy.com/embed/VwoJkTfZAUBSU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/89a-eightninea-VwoJkTfZAUBSU">via GIPHY</a></p>`,
             `<div style="width:100%;height:0;padding-bottom:84%;position:relative;"><iframe src="https://giphy.com/embed/9J7tdYltWyXIY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/internet-google-chrone-9J7tdYltWyXIY">via GIPHY</a></p>`,
@@ -70,7 +70,7 @@ module.exports = {
     ],
     postcss: {
         plugins: [
-            require('tailwindcss')(),
+            require('tailwindcss'),
         ]
     },
 }
