@@ -1,6 +1,5 @@
 const dayjs = require('dayjs')
-const util = require('util')
-const path = require('path')
+const pathlib = require('path')
 
 module.exports = (options, context) => {
 
@@ -66,24 +65,15 @@ module.exports = (options, context) => {
                 frontmatter: options.home.frontmatter || {},
             })
 
-            // chunk the posts by limit
+            // get limit from options or set default value
             const limit = options.limit || 5
+
+            // chunk the posts by limit
             for (let i = 0; i < posts.length; i += limit) {
+
                 // create pagination page index
-                const page_title_index = i / limit + 1
-                const pages_array_index = i / limit
-
-                // generate page frontmatter
-                let frontmatter = options.posts.frontmatter || {}
-
-                // add pagination page index to frontmatter
-                frontmatter.pagination = {
-                    page: pages_array_index
-                }
-
-                // set publish flag to false, since we don't want these 
-                // pages to be listed with the posts
-                frontmatter.publish = false
+                let page_title_index = i / limit + 1
+                let pages_array_index = i / limit
 
                 // generate page title
                 let title = options.posts.title || 'Posts Page #';
@@ -104,7 +94,14 @@ module.exports = (options, context) => {
                 pages.push({
                     path: path,
                     title: title,
-                    frontmatter: frontmatter
+                    frontmatter: {
+                        publish: false,
+                        pagination: {
+                            index: pages_array_index,
+                            page: page_title_index
+                        },
+                        layout: options.posts.frontmatter.layout
+                    }
                 })
 
             }
@@ -137,7 +134,7 @@ module.exports = (options, context) => {
         enhanceAppFiles() {
             // add the $pagination object to the vue root element
             return [
-                path.resolve(__dirname, 'pagination.js')
+                pathlib.resolve(__dirname, 'pagination.js')
             ]
         }
     }

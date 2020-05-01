@@ -6,7 +6,7 @@ export default ({ Vue }) => {
     Vue.mixin({
         computed: {
             $pagination() {
-                // only work with publish able posts
+                // only work with published posts
                 let posts = this.$site.pages.filter(function(page) {
                     return page.path.startsWith(options.posts.path)
                 }).filter(function(page) {

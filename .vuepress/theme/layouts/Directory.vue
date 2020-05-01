@@ -4,8 +4,8 @@
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-8 pb-4">
                 <PageTitle/>
-                <ArticleList :articles="pagination.pages"/>
-                <Pagination :pagination="pagination"/>
+                <ArticleList :articles="articles"/>
+                <!-- <Pagination :pagination="pagination"/> -->
             </div>
             <div class="col-span-12 lg:col-span-4">
 
@@ -26,8 +26,8 @@
     export default {
         components: {Pagination, PageTitle, Header, ArticleList, Sidebar},
         computed: {
-            pagination() {
-                return this.$pagination.pages[this.$page.frontmatter.pagination.page]
+            articles() {
+                return this.$pagination.pages[this.$page.frontmatter.pagination.index]
             }
         }
     }
