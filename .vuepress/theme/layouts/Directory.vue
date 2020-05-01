@@ -5,7 +5,7 @@
             <div class="col-span-12 lg:col-span-8 pb-4">
                 <PageTitle/>
                 <ArticleList :articles="articles"/>
-                <!-- <Pagination :pagination="pagination"/> -->
+                <Pagination :pagination="pagination"/>
             </div>
             <div class="col-span-12 lg:col-span-4">
 
@@ -28,6 +28,9 @@
         computed: {
             articles() {
                 return this.$pagination.pages[this.$page.frontmatter.pagination.index]
+            },
+            pagination() {
+                return this.$pagination
             }
         }
     }
