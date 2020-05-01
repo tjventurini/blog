@@ -32,10 +32,8 @@
         components: {Sidebar, PageTitle, Header, ArticleList},
         computed: {
             articles() {
-                console.log(this)
-                console.log(this.$pagination)
-                // console.log($pagination.pages())
-                // return this.$pagination.pages()
+                console.log(this.$pagination.pages)
+                return this.$pagination.pages[0]
             }
         }
     }
