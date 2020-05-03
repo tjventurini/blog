@@ -26,7 +26,7 @@ module.exports = (options, context) => {
             if (typeof frontmatter.publish == 'undefined') {
                 // if there is a date
                 if (frontmatter.date) {
-                    frontmatter.publish = dayjs() >= dayjs(frontmatter.date)
+                    frontmatter.publish = dayjs().format('YYYY-MM-DD') >= dayjs(frontmatter.date).format('YYYY-MM-DD')
                 }
                 // otherwise we can set publish to true anyways
                 else {
