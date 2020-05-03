@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+---
+title: ${1:Title}
+description: ${2:Description}
+permalink: articles/${1/(\w)|(\s)/(?1\l$1:)(?2-:)/g}
+date: ${4:2020-05-01}
+image: /covers/${1/(\w)|(\s)/(?1\l$1:)(?2-:)/g}.png
+tags:
+    - ${5:tag}
+---
+
+${2:Description}
+
+<!-- more -->
+
+${6:Content}
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>post</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.markdown</scope>
+    <description>Post blueprint</description>
+</snippet>
