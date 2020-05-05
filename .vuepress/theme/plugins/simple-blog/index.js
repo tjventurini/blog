@@ -8,34 +8,6 @@ module.exports = (options, context) => {
         name: 'vuepress-plugin-simple-blog',
 
         /**
-         * Extend the $page attribute on the pages.
-         */
-        async extendPageData($page) {
-            const {
-                _filePath,           // file's absolute path
-                _computed,           // access the client global computed mixins at build time, e.g _computed.$localePath.
-                _content,            // file's raw content string
-                _strippedContent,    // file's content string without frontmatter
-                key,                 // page's unique hash key
-                frontmatter,         // page's frontmatter object
-                regularPath,         // current page's default link (follow the file hierarchy)
-                path,                // current page's real link (use regularPath when permalink does not exist)
-            } = $page
-
-            // check if the publish flag was already
-            if (typeof frontmatter.publish == 'undefined') {
-                // if there is a date
-                if (frontmatter.date) {
-                    frontmatter.publish = dayjs().format('YYYY-MM-DD') >= dayjs(frontmatter.date).format('YYYY-MM-DD')
-                }
-                // otherwise we can set publish to true anyways
-                else {
-                    frontmatter.publish = true
-                }
-            }
-        },
-
-        /**
          * generate some pages
          */
         additionalPages() {
@@ -136,6 +108,6 @@ module.exports = (options, context) => {
             return [
                 pathlib.resolve(__dirname, 'pagination.js')
             ]
-        }
+        },
     }
 }

@@ -36,6 +36,7 @@ module.exports = {
             filter: frontmatter => frontmatter.date <= new Date(),
             count: 100
         }],
+        [require('./plugins/zengarden-publish/index.js')],
         [require('./plugins/simple-blog/index.js'), {
             home: {
                 title: 'Home',
@@ -46,8 +47,16 @@ module.exports = {
             posts: {
                 title: 'Articles Page #',
                 path: '/articles/',
+                dist: '/articles/', // TODO: make use of this!
                 frontmatter: {
                     layout: 'Directory'
+                }
+            },
+            tags: {
+                title: 'Tags',
+                dist: '/tags/',
+                frontmatter: {
+                    layout: 'Tags'
                 }
             },
             limit: 5
