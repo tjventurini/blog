@@ -36,13 +36,13 @@ module.exports = {
             filter: frontmatter => frontmatter.date <= new Date(),
             count: 100
         }],
-        [require('./plugins/zengarden-home/index.js'), {
+        ['zengarden-publish'],
+        ['zengarden-home', {
             title: 'Home',
             frontmatter: {
                 layout: 'Home'
             }
         }],
-        [require('./plugins/zengarden-publish/index.js')],
         [require('./plugins/zengarden-posts/index.js'), {
             path: '/articles/'
         }],

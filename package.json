@@ -1,12 +1,4 @@
 {
-    "name": "blog",
-    "version": "1.0.0",
-    "description": "My personal blog.",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "git@gitlab.com:tjventurini/blog.git"
-    },
     "scripts": {
         "dev": "vuepress dev",
         "build": "vuepress build"
@@ -18,11 +10,11 @@
         "@vuepress/plugin-search": "^1.4.0",
         "node-sass": "^4.13.1",
         "sass-loader": "^7.3.1",
+        "tailwindcss": "^1.2.0",
         "vuepress": "^1.4.0",
         "vuepress-plugin-autometa": "^0.1.13",
-        "vuepress-plugin-rss": "^2.0.0"
-    },
-    "dependencies": {
-        "tailwindcss": "^1.2.0"
+        "vuepress-plugin-rss": "^2.0.0",
+        "vuepress-plugin-zengarden-home": "^1.0.0",
+        "vuepress-plugin-zengarden-publish": "^1.0.1"
     }
 }
