@@ -14,7 +14,7 @@
             </div>
             <div class="col-span-12 lg:col-span-4">
 
-                <Sidebar/>
+                <!-- <Sidebar/> -->
 
             </div>
         </div>
@@ -25,10 +25,11 @@
     import Header from '../components/Header'
     import PageTitle from "../components/PageTitle";
     import ArticleList from "../components/ArticleList";
-    import Sidebar from "../components/Sidebar"
+    // import Sidebar from "../components/Sidebar"
 
     export default {
         components: {ArticleList, PageTitle, Header, Sidebar},
+        components: {ArticleList, PageTitle, Header},
         data() {
             return {};
         }

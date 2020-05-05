@@ -29,14 +29,14 @@
                 </div>
                 <div v-html="article.excerpt"></div>
                 <div class="mt-4">
-                    <div v-for="tag in article.frontmatter.tags"
+<!--                     <div v-for="tag in article.frontmatter.tags"
                          class="inline-block mb-1"
                     >
                         <a :href="$tags.map[tag].path"
                            class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
                         >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i></a>
                     </div>
-                </div>
+ -->                </div>
                 <div class="more-button pt-4">
                     <a :href="article.path"
                        class="moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm">

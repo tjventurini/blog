@@ -11,6 +11,7 @@ module.exports = (options, context) => {
          * generate some pages
          */
         additionalPages() {
+
             // only use the posts
             let posts = context.pages.filter(function(page) {
                 return page.path.startsWith(options.posts.path)

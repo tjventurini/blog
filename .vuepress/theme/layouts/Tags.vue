@@ -18,7 +18,7 @@
             </div>
             <div class="col-span-12 lg:col-span-4">
 
-                <Sidebar/>
+                <!-- <Sidebar/> -->
 
             </div>
         </div>
@@ -28,10 +28,11 @@
 <script>
     import Header from '../components/Header'
     import PageTitle from "../components/PageTitle";
-    import Sidebar from "../components/Sidebar"
+    // import Sidebar from "../components/Sidebar"
 
     export default {
-        components: {PageTitle, Header, Sidebar},
+        // components: {PageTitle, Header, Sidebar},
+        components: {PageTitle, Header},
         data() {
             return {};
         }

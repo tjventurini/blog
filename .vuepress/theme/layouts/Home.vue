@@ -33,8 +33,7 @@
         components: {PageTitle, Header, ArticleList},
         computed: {
             articles() {
-                // return this.$pagination.pages[0]
-                return this.$site.posts
+                return this.$pagination.pages[0]
             }
         }
     }

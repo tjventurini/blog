@@ -46,29 +46,13 @@ module.exports = {
         [require('./plugins/zengarden-posts/index.js'), {
             path: '/articles/'
         }],
-        // [require('./plugins/simple-blog/index.js'), {
-        //     home: {
-        //         title: 'Home',
-        //         frontmatter: {
-        //             layout: 'Home'
-        //         }
-        //     },
-        //     posts: {
-        //         title: 'Articles Page #',
-        //         path: '/articles/',
-        //         dist: '/articles/', // TODO: make use of this!
-        //         frontmatter: {
-        //             layout: 'Directory'
-        //         }
-        //     },
-        //     tags: {
-        //         title: 'Tags',
-        //         dist: '/tags/',
-        //         frontmatter: {
-        //             layout: 'Tags'
-        //         }
-        //     },
-        //     limit: 5
-        // }]
+        [require('./plugins/zengarden-pagination/index.js'), {
+            title: 'Articles Page #',
+            path: '/articles/',
+            dist: '/articles/', // TODO: make use of this!
+            frontmatter: {
+                layout: 'Directory'
+            }
+        }]
     ]
 }

@@ -27,20 +27,20 @@
                         </div>
 
                         <div class="mt-4">
-                            <div v-for="tag in $page.frontmatter.tags"
+<!--                             <div v-for="tag in $page.frontmatter.tags"
                                  class="inline-block mb-1"
                             >
                                 <a :href="$tags.map[tag].path"
                                    class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
                                 >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i></a>
                             </div>
-                        </div>
+ -->                        </div>
                     </div>
                 </div>
             </article>
             <div class="col-span-12 lg:col-span-4">
 
-                <Sidebar/>
+                <!-- <Sidebar/> -->
 
             </div>
         </div>
@@ -53,10 +53,11 @@
 <script>
     import Header from '../components/Header'
     import PageTitle from "../components/PageTitle";
-    import Sidebar from "../components/Sidebar"
+    // import Sidebar from "../components/Sidebar"
 
     export default {
-        components: {PageTitle, Header, Sidebar},
+        // components: {PageTitle, Header, Sidebar},
+        components: {PageTitle, Header},
         methods: {
             mailchimp: function() {
                 window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"ca1aaebb1c402c379aa8edf82","lid":"1d24155121","uniqueMethods":true}) })

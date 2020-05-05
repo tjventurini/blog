@@ -3,16 +3,18 @@ import Vue from 'vue'
 import options from '@dynamic/zengarden-pagination/options'
 
 export default ({ Vue }) => {
+
+    let limit = options.limit || 5
+
     Vue.mixin({
         computed: {
             $pagination() {
 
                 // get the posts to work with
-                let posts = this.$site.posts;
+                let posts = this.$posts;
 
-                // chunk the posts by limit
+                // // chunk the posts by limit
                 let pages = []
-                const limit = options.limit || 5
                 for (let i = 0; i < posts.length; i += limit) {
                     pages.push( posts.slice(i, i+limit) )
                 }
@@ -31,9 +33,9 @@ export default ({ Vue }) => {
                 if (hasPrev) {
                     let prevIndex = this.$page.frontmatter.pagination.page - 1
                     if (prevIndex > 1) {
-                        prevLink = options.posts.path + prevIndex + '/'
+                        prevLink = options.path + prevIndex + '/'
                     } else {
-                        prevLink = options.posts.path
+                        prevLink = options.path
                     }
                 }
 
@@ -50,7 +52,7 @@ export default ({ Vue }) => {
                 let nextLink = null
                 if (hasNext) {
                     let nextIndex = this.$page.frontmatter.pagination.page + 1
-                    nextLink = options.posts.path + nextIndex + '/'
+                    nextLink = options.path + nextIndex + '/'
                 }
 
                 // expose page index for pagination component in FE
