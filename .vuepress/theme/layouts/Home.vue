@@ -15,7 +15,7 @@
             </div>
             <div class="col-span-12 lg:col-span-4">
 
-                <Sidebar/>
+                <!-- <Sidebar/> -->
 
             </div>
         </div>
@@ -26,14 +26,15 @@
     import Header from '../components/Header'
     import ArticleList from '../components/ArticleList'
     import PageTitle from "../components/PageTitle"
-    import Sidebar from "../components/Sidebar"
-    import dayjs from "dayjs"
+    // import Sidebar from "../components/Sidebar"
 
     export default {
-        components: {Sidebar, PageTitle, Header, ArticleList},
+        // components: {Sidebar, PageTitle, Header, ArticleList},
+        components: {PageTitle, Header, ArticleList},
         computed: {
             articles() {
-                return this.$pagination.pages[0]
+                // return this.$pagination.pages[0]
+                return this.$site.posts
             }
         }
     }

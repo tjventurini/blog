@@ -20,15 +20,15 @@ module.exports = {
             sitemap: {
                 hostname: 'https://thomasventurini.com',
             },
-            frontmatters: [
-                {
-                    id: 'tags',
-                    keys: ['tags'],
-                    path: '/tag/',
-                    layout: 'Tags',
-                    scopeLayout: 'Tag'
-                }
-            ]
+            // frontmatters: [
+            //     {
+            //         id: 'tags',
+            //         keys: ['tags'],
+            //         path: '/tag/',
+            //         layout: 'Tags',
+            //         scopeLayout: 'Tag'
+            //     }
+            // ]
         }],
         ['vuepress-plugin-rss', {
             base_url: '/', // required
@@ -36,30 +36,39 @@ module.exports = {
             filter: frontmatter => frontmatter.date <= new Date(),
             count: 100
         }],
+        [require('./plugins/zengarden-home/index.js'), {
+            title: 'Home',
+            frontmatter: {
+                layout: 'Home'
+            }
+        }],
         [require('./plugins/zengarden-publish/index.js')],
-        [require('./plugins/simple-blog/index.js'), {
-            home: {
-                title: 'Home',
-                frontmatter: {
-                    layout: 'Home'
-                }
-            },
-            posts: {
-                title: 'Articles Page #',
-                path: '/articles/',
-                dist: '/articles/', // TODO: make use of this!
-                frontmatter: {
-                    layout: 'Directory'
-                }
-            },
-            tags: {
-                title: 'Tags',
-                dist: '/tags/',
-                frontmatter: {
-                    layout: 'Tags'
-                }
-            },
-            limit: 5
-        }]
+        [require('./plugins/zengarden-posts/index.js'), {
+            path: '/articles/'
+        }],
+        // [require('./plugins/simple-blog/index.js'), {
+        //     home: {
+        //         title: 'Home',
+        //         frontmatter: {
+        //             layout: 'Home'
+        //         }
+        //     },
+        //     posts: {
+        //         title: 'Articles Page #',
+        //         path: '/articles/',
+        //         dist: '/articles/', // TODO: make use of this!
+        //         frontmatter: {
+        //             layout: 'Directory'
+        //         }
+        //     },
+        //     tags: {
+        //         title: 'Tags',
+        //         dist: '/tags/',
+        //         frontmatter: {
+        //             layout: 'Tags'
+        //         }
+        //     },
+        //     limit: 5
+        // }]
     ]
 }

@@ -98,16 +98,6 @@ module.exports = (options, context) => {
                     content: `export default ${options_json_string}`
                 }
             ]
-        },
-
-        /**
-         * add pagination object to vue
-         */
-        enhanceAppFiles() {
-            // add the $pagination object to the vue root element
-            return [
-                pathlib.resolve(__dirname, 'pagination.js')
-            ]
-        },
+        }
     }
 }
