@@ -10,9 +10,6 @@ module.exports = (options, context) => {
         return dayjs().format('YYYY-MM-DD') >= dayjs(date).format('YYYY-MM-DD')
     }
 
-
-
-
     return {
 
         name: 'vuepress-plugin-zengarden-publish',
