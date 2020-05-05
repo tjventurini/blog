@@ -20,15 +20,15 @@ module.exports = {
             sitemap: {
                 hostname: 'https://thomasventurini.com',
             },
-            // frontmatters: [
-            //     {
-            //         id: 'tags',
-            //         keys: ['tags'],
-            //         path: '/tag/',
-            //         layout: 'Tags',
-            //         scopeLayout: 'Tag'
-            //     }
-            // ]
+            frontmatters: [
+                {
+                    id: 'tags',
+                    keys: ['tags'],
+                    path: '/tag/',
+                    layout: 'Tags',
+                    scopeLayout: 'Tag'
+                }
+            ]
         }],
         ['vuepress-plugin-rss', {
             base_url: '/', // required

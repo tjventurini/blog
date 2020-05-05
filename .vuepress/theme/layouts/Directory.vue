@@ -9,7 +9,7 @@
             </div>
             <div class="col-span-12 lg:col-span-4">
 
-                <!-- <Sidebar/> -->
+                <Sidebar/>
 
             </div>
         </div>
@@ -21,11 +21,10 @@
     import ArticleList from '../components/ArticleList'
     import PageTitle from "../components/PageTitle"
     import Pagination from "../components/Pagination"
-    // import Sidebar from "../components/Sidebar"
+    import Sidebar from "../components/Sidebar"
 
     export default {
-        components: {Pagination, PageTitle, Header, ArticleList},
-        // components: {Pagination, PageTitle, Header, ArticleList, Sidebar},
+        components: {Pagination, PageTitle, Header, ArticleList, Sidebar},
         computed: {
             articles() {
                 return this.$pagination.pages[this.$page.frontmatter.pagination.index]

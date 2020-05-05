@@ -12,7 +12,7 @@
             </div>
             <div class="col-span-12 lg:col-span-4">
 
-                <!-- <Sidebar/> -->
+                <Sidebar/>
 
             </div>
         </div>
