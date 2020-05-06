@@ -8470,6 +8470,11 @@ vuepress-plugin-zengarden-home@^1.0.0:
   resolved "https://registry.yarnpkg.com/vuepress-plugin-zengarden-home/-/vuepress-plugin-zengarden-home-1.0.0.tgz#11e4f53b2bc731c68eb2772736eff1caea830e82"
   integrity sha512-emtNfpMZ7aN8544oRJDE978ge/5kqSDzuWqrL3JH2IqPF5rGWU9w2G4Hxed2ry7zJIYaTLs9VnCqlsf4gCSL0w==
 
+vuepress-plugin-zengarden-posts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-zengarden-posts/-/vuepress-plugin-zengarden-posts-1.0.0.tgz#bbcb65133e40332c9eba2e0a7467433db805b2f1"
+  integrity sha512-6JB2nc+mNgr56WmW4zi/zkHOobmQfznrJ4BtOjMhKCxOVZwNcjEtwVa22Ude2ZJhYSKd/yiBElKjoCzjpoZ0Nw==
+
 vuepress-plugin-zengarden-publish@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-zengarden-publish/-/vuepress-plugin-zengarden-publish-1.0.1.tgz#6b11bc367b2799d4d4d15d0b117f6aeed7624485"

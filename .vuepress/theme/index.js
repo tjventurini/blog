@@ -43,7 +43,7 @@ module.exports = {
                 layout: 'Home'
             }
         }],
-        [require('./plugins/zengarden-posts/index.js'), {
+        ['zengarden-posts', {
             path: '/articles/'
         }],
         [require('./plugins/zengarden-pagination/index.js'), {
