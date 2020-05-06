@@ -46,7 +46,7 @@ module.exports = {
         ['zengarden-posts', {
             path: '/articles/'
         }],
-        [require('./plugins/zengarden-pagination/index.js'), {
+        ['zengarden-pagination', {
             title: 'Articles Page #',
             path: '/articles/',
             dist: '/articles/', // TODO: make use of this!
