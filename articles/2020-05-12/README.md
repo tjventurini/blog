@@ -6,7 +6,6 @@ date: 2020-05-12
 image: /covers/rename-attributes-in-graphql.png
 tags:
     - graphql
-publish: true
 ---
 
 Sometimes you just can't expose the internal as it is in your database or on your model. So GraphQL has a convenient way to rename attributes when defining your types in your schema.
