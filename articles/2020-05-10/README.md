@@ -7,7 +7,6 @@ image: /covers/dynamic-relationships-on-laravel-models.png
 tags:
     - php
     - laravel
-publish: true
 ---
 
 Learn how to add dynamic relationships on Laravel models. 
