@@ -1,7 +1,7 @@
 <template>
     <div class="tags pt-4 text-center w-2/3 m-auto">
         <h3 class="text-lg font-bold mb-2">Tags</h3>
-        <div v-for="tag in $tags.list"
+        <div v-for="tag in $tags"
              class="inline-block mb-1"
         >
             <a :href="tag.path"
