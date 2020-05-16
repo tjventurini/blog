@@ -6,7 +6,7 @@
                 <PageTitle/>
                 <div class="grid grid-cols-12">
                     <div class="col-start-2 col-span-11">
-                        <div v-for="tag in $tags.list"
+                        <div v-for="tag in $tags"
                              class="inline-block mb-1"
                         >
                             <a :href="tag.path"

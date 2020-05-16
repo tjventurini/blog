@@ -8485,6 +8485,13 @@ vuepress-plugin-zengarden-publish@^1.0.1:
   resolved "https://registry.yarnpkg.com/vuepress-plugin-zengarden-publish/-/vuepress-plugin-zengarden-publish-1.0.1.tgz#6b11bc367b2799d4d4d15d0b117f6aeed7624485"
   integrity sha512-VhSxQ9MVCGapO1l/GFieqjK9tuBUxv0s84DEG57pVrE6nSE13IF+eAXXFpB9GhILsw8flYMOa4STelbzJHaT1g==
 
+vuepress-plugin-zengarden-tags@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-zengarden-tags/-/vuepress-plugin-zengarden-tags-1.0.0.tgz#0c47b04b351dc5b6aee6f2747c6634f1fe7e0bee"
+  integrity sha512-vtMALRCj1vmu66ptau3f6TpS3Rlv01zxJPNu4CM7yUgXD3k7vyB5oAPKGnu0AnH7f5IefPDzUYtYYgbt0JBVIQ==
+  dependencies:
+    vuepress-plugin-zengarden-publish "^1.0.1"
+
 vuepress@^1.4.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.4.1.tgz#726885da5c569755b40fd795ef3aed3fae13f83c"

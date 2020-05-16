@@ -7,7 +7,7 @@
                 <div class="grid grid-cols-12">
                     <div class="col-start-2 col-span-11">
 
-                        <ArticleList :articles="$currentTags.pages"/>
+                        <ArticleList :articles="pages"/>
 
                     </div>
                 </div>
@@ -29,8 +29,10 @@
 
     export default {
         components: {ArticleList, PageTitle, Header, Sidebar},
-        data() {
-            return {};
+        computed: {
+            pages: function() {
+                return this.$tags[this.$page.frontmatter.page_tag].pages
+            } 
         }
     }
 </script>
