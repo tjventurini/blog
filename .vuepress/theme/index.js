@@ -54,7 +54,7 @@ module.exports = {
                 layout: 'Directory'
             }
         }],
-        [require('../plugins/zengarden-tags'), {
+        ['zengarden-tags', {
             tag: 'Tag',
             tags: 'Tags',
         }]
