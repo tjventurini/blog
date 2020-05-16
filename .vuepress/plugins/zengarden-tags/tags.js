@@ -20,9 +20,6 @@ export default ({ Vue }) => {
 
                             return false
                         })[0]
-                    }).filter((page) => {
-                        // TODO: find a way to filter these upfront 
-                        return !! page
                     })
 
                     tags[tag] = {

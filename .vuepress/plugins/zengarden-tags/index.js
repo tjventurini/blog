@@ -35,6 +35,9 @@ module.exports = (options, context) => {
                 path,                // current page's real link (use regularPath when permalink does not exist)
             } = $page
 
+            // skip if the page is not published
+            if (! frontmatter.publish) return
+
             // get tags from page
             let tags = frontmatter[config.key]
 
