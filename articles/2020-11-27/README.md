@@ -6,7 +6,7 @@ permalink: articles/create-uefi-bootable-usb-stick-using-dd
 image: /covers/create-uefi-bootable-usb-stick-using-dd.png
 tags: 
     - ubuntu
-publish: true
+publish: false
 ---
 
 In this small article we are going to take a look on how you can create a bootable usb stick ready for your UEFI bios.
