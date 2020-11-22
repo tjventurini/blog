@@ -105,8 +105,9 @@ export default {
 .content
     h2
         @apply font-bold my-4
-            a
-                @apply no-underline
+
+        a
+            @apply no-underline
 
         p
             @apply mb-4
@@ -117,13 +118,13 @@ export default {
         ul
             @apply list-disc px-8
 
-        a
-            @apply underline text-gray-500
+    a
+        @apply underline text-gray-500
 
-            svg
-                @apply ml-1
+        svg
+            @apply ml-1
 
-        img
-            @apply rounded-lg
+    img
+        @apply rounded-lg
 </style>
 
