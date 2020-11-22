@@ -7,7 +7,6 @@ image: /covers/disabling-ubuntu-dock.png
 tags: 
     - ubuntu
     - gnome
-publish: true
 ---
 
 I really love ubuntu but there are some things that I don't like about it. One of it is that you can't disable the ubuntu dock using the default way. But don't worry, I got you covered 😉
