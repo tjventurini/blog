@@ -5,7 +5,7 @@ date: 2020-12-04
 permalink: articles/create-an-uefi-bootable-usb-stick-using-the-gui
 image: /covers/create-an-uefi-bootable-usb-stick-using-the-gui.png
 tags: 
-        - ubuntu
+    - ubuntu
 ---
 
 Last week we took a look on [how to create a bootable USB stick using the command line tool `dd`](/articles/create-uefi-bootable-usb-stick-using-dd). Today we are going to see how to do the same using the GUI.

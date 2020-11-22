@@ -1,10 +1,10 @@
 ---
 title: Disabling Ubuntu Dock
-description: Disabling Ubuntu Dock
+description: Disabling Ubuntu Dock.
 date: 2020-12-11
 permalink: articles/disabling-ubuntu-dock
 image: /covers/disabling-ubuntu-dock.png
-tags: 
+tags:
     - ubuntu
     - gnome
 ---

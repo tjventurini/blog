@@ -1,39 +1,38 @@
 <template>
     <div class="page max-w-screen-lg mx-auto text-gray-700">
-        <Header/>
+        <Header />
         <div class="grid grid-cols-12">
             <div class="col-span-12 lg:col-span-8 pb-4">
-                <PageTitle/>
+                <PageTitle />
                 <div class="grid grid-cols-12">
                     <div class="col-start-2 col-span-11">
-                        <div v-for="tag in $tags"
-                             class="inline-block mb-1"
-                        >
-                            <a :href="tag.path"
-                               class="tag moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm whitespace-no-wrap mx-1"
-                            >{{ tag.name }}<i class="fas fa-tag text-xs pl-2"></i></a>
+                        <div v-for="tag in $tags" class="inline-block mb-1">
+                            <a
+                                :href="tag.path"
+                                class="tag moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm whitespace-no-wrap mx-1"
+                                >{{ tag.name
+                                }}<i class="fas fa-tag text-xs pl-2"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-4">
-
-                <Sidebar/>
-
+                <Sidebar />
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    import Header from '../components/Header'
-    import PageTitle from "../components/PageTitle";
-    import Sidebar from "../components/Sidebar"
+import Header from "../components/Header";
+import PageTitle from "../components/PageTitle";
+import Sidebar from "../components/Sidebar";
 
-    export default {
-        components: {PageTitle, Header, Sidebar},
-        data() {
-            return {};
-        }
-    }
+export default {
+    components: { PageTitle, Header, Sidebar },
+    data() {
+        return {};
+    },
+};
 </script>
