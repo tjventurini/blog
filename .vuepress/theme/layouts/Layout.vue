@@ -104,16 +104,20 @@ export default {
 <style lang="sass">
 .content
     h2
+        @apply text-lg
+    h3
+        @apply text-xl
+    h2,h3
         @apply font-bold my-4
 
         a
             @apply no-underline
 
-        p
-            @apply mb-4
+    p
+        @apply mb-4
 
-            code
-                @apply bg-gray-200 p-1 px-2 rounded text-red-400 text-sm border border-gray-400
+        code
+            @apply bg-gray-200 p-1 px-2 rounded text-red-400 text-sm border border-gray-400
 
         ul
             @apply list-disc px-8
