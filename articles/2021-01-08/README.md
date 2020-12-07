@@ -7,7 +7,6 @@ image: /covers/install-neovim-05-in-ubuntu.png
 tags: 
     - ubuntu
     - vim
-publish: true
 ---
 
 Some introduction ...
