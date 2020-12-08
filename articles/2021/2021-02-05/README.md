@@ -13,4 +13,35 @@ Today I had to refresh my javascript knowledge a bit and found my self googling 
 
 <!-- more -->
 
-The actual content ...
+Here we go:
+
+```javascript
+// create some objects
+let objectOne = { foo: "bar" }
+let objectTwo = { bar: "baz" }
+
+// now let's create an array out the objects
+//   we just created.
+let objectArray = [objectOne, objectTwo]
+
+// now we are going to create an object that is
+//   a duplicate of `objectOne`
+let duplicateObject = { foo: "bar" }
+
+// last we use the `some` method on the `objectArray`
+//   to prevent duplicates in it
+if (!objectArray.some( element => JSON.stringify(element) === JSON.stringify(duplicateObject))) {
+    objectArray.push(duplicateObject) // will not happen 😉
+}
+
+// let's see if it worked
+console.log(objectArray)
+```
+
+If you would put that code into a javascript file and execute it with node, it would return the following.
+
+```bash
+[ { foo: 'bar' }, { bar: 'baz' } ]
+```
+
+And that's it! 😁
