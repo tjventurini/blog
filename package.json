@@ -19,5 +19,8 @@
         "vuepress-plugin-zengarden-posts": "^1.0.0",
         "vuepress-plugin-zengarden-publish": "^1.0.1",
         "vuepress-plugin-zengarden-tags": "^1.0.0"
+    },
+    "dependencies": {
+        "ci": "^1.0.0"
     }
 }
