@@ -41,7 +41,6 @@
                         <div class="content">
                             <Content />
                         </div>
-
                         <div class="mt-4">
                             <div
                                 v-for="tag in $page.frontmatter.tags"
@@ -56,6 +55,8 @@
                                 ></a>
                             </div>
                         </div>
+
+                        <Newsletter />
                     </div>
                 </div>
             </article>
@@ -63,12 +64,6 @@
                 <Sidebar />
             </div>
         </div>
-
-        <script
-            type="text/javascript"
-            src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-            data-dojo-config="usePlainJson: true, isDebug: false"
-        ></script>
     </div>
 </template>
 
@@ -76,24 +71,10 @@
 import Header from "../components/Header";
 import PageTitle from "../components/PageTitle";
 import Sidebar from "../components/Sidebar";
+import Newsletter from "../components/Newsletter";
 
 export default {
-    components: { PageTitle, Header, Sidebar },
-    methods: {
-        mailchimp: function () {
-            window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
-                L.start({
-                    baseUrl: "mc.us16.list-manage.com",
-                    uuid: "ca1aaebb1c402c379aa8edf82",
-                    lid: "1d24155121",
-                    uniqueMethods: true,
-                });
-            });
-        },
-    },
-    mounted() {
-        this.mailchimp();
-    },
+    components: { PageTitle, Header, Sidebar, Newsletter },
 };
 </script>
 

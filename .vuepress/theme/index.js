@@ -9,7 +9,7 @@ module.exports = {
         ['@vuepress/search', {
             searchMaxSuggestions: 10
         }],
-        ['vuepress-plugin-autometa',{
+        ['vuepress-plugin-autometa', {
             site: {
                 name: 'Thomas Venturini',
                 twitter: 'tjventurini',
