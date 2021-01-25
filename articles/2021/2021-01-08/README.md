@@ -9,7 +9,7 @@ tags:
     - vim
 ---
 
-Some introduction ...
+How to install NeoVim 0.5 in Ubuntu. Short and uncomplicated.
 
 <!-- more -->
 
