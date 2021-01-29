@@ -6,7 +6,6 @@ permalink: articles/move-through-suggestions-with-tab-in-vs-code
 image: /covers/move-through-suggestions-with-tab-in-vs-code.png
 tags: 
     - vscode
-publish: true
 ---
 
 Today I have been looking for a way to move through the suggestions that VS Code provides while typing using the `TAB` key. Here is how I set it up 😎

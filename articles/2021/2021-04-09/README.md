@@ -6,7 +6,6 @@ permalink: articles/save-vim-macros-to-your-vimrc
 image: /covers/save-vim-macros-to-your-vimrc.png
 tags: 
     - vim
-publish: true
 ---
 
 Lately I'm using Vim (or actually NeoVim) more and more often. This comes with the need for Macros. Here is how you can save your vim macros permanently to your vimrc.
