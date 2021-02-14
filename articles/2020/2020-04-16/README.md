@@ -7,6 +7,7 @@ image: /covers/common-composer-commands.png
 tags:
     - composer
     - php
+    - terminal
     - console
 ---
 

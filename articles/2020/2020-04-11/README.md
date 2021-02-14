@@ -6,7 +6,7 @@ date: 2020-04-11
 image: /covers/search-and-replace-in-large-files.png
 tags:
     - console
-    - bash
+    - terminal
     - ubuntu
 ---
 
