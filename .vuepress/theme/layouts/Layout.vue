@@ -56,6 +56,8 @@
                             </div>
                         </div>
 
+                        <ShareOnTwitter />
+
                         <Newsletter />
                     </div>
                 </div>
@@ -72,9 +74,10 @@ import Header from "../components/Header";
 import PageTitle from "../components/PageTitle";
 import Sidebar from "../components/Sidebar";
 import Newsletter from "../components/Newsletter";
+import ShareOnTwitter from "../components/ShareOnTwitter";
 
 export default {
-    components: { PageTitle, Header, Sidebar, Newsletter },
+    components: { PageTitle, Header, Sidebar, Newsletter, ShareOnTwitter },
 };
 </script>
 

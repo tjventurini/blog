@@ -89,7 +89,6 @@ tags:
 {{~TAGS :tag:index}}
     - {{=tag}}
 {{~}}
-publish: true
 ---
 
 Some introduction ...

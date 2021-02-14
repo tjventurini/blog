@@ -11,7 +11,7 @@
                 novalidate
             >
                 <div class="mb-5">
-                    <h3 class="font-bold text-xl mb-2">Newsletter 📨</h3>
+                    <h3 class="font-bold text-xl mb-2">Newsletter&nbsp;📨</h3>
                     <p>
                         Don't want to miss any tips? Then signup for my
                         newsletter, it will be worth it!
@@ -42,7 +42,7 @@
                         value="Subscribe ✔"
                         name="subscribe"
                         id="mc-embedded-subscribe"
-                        class="button moving-gradient-bg text-center px-3 py-1 rounded-lg text-white"
+                        class="button moving-gradient-bg text-center px-3 py-1 rounded-lg text-white font-bold"
                     />
                 </div>
             </form>

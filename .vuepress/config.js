@@ -2,6 +2,7 @@ module.exports = {
     title: "Thomas Venturini",
     description: "My personal blog.",
     themeConfig: {
+        baseUrl: "https://thomasventurini.com",
         socialLinks: [
             {
                 icon: 'fab fa-twitter',
