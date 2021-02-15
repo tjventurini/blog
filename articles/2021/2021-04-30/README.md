@@ -1,8 +1,8 @@
 ---
-title: How to create a Desktop Wallpaper Slideshow
-description: How to create a desktop wallpaper slideshow.
+title: How to create a Desktop Wallpaper Slideshow in Ubuntu
+description: How to create a desktop wallpaper slideshow in ubuntu.
 date: 2021-04-30
-permalink: articles/how-to-create-a-desktop-wallpaper-slideshow
+permalink: articles/how-to-create-a-desktop-wallpaper-slideshow-in-ubuntu
 image: /covers/how-to-create-a-desktop-wallpaper-slideshow.png
 tags: 
     - ubuntu
@@ -12,7 +12,7 @@ Do you need some change in your life? Then try out desktop wallpaper slideshows.
 
 <!-- more -->
 
-So the easiest way I know to create a changing wallpaper is to use the _personal photo manager_ [Shotwell](https://wiki.gnome.org/Apps/Shotwell/).
+So the easiest way I know to create a changing wallpaper is to use the _personal photo manager_ [Shotwell](https://wiki.gnome.org/Apps/Shotwell/). It is preinstalled in Ubuntu so you don't need to do anything.
 
 So, assuming you already have the images that you want to setup as a wallpaper slideshow on your machine, you can just open shotwell through the launcher or by typing `shotwell` in the terminal.
 
