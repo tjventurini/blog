@@ -7,6 +7,7 @@ image: /covers/install-neovim-05-in-ubuntu.png
 tags: 
     - ubuntu
     - vim
+    - neovim
 ---
 
 How to install NeoVim 0.5 in Ubuntu. Short and uncomplicated.
@@ -40,11 +41,18 @@ source ~/.vimrc
 
 This file will be located under `~/.config/nvim/init.vim`.
 
-If you are lazy and are used to type `vim` in your terminal, then you should add the following aliases to your `.bashrc` or `.zshrc` file.
+If you are lazy (like me) you can add `nvim` as `vim` alternative.
 
 ```bash
-alias vim='nvim'
-alias vi='nvim'
+sudo update-alternatives --install $(which vim) vim $(which nvim) 10
 ```
+
+Now you can call the following to choose `nvim` as alternative to `vim` so whenever you call `vim` in the terminal it actually starts `nvim`.
+
+```bash
+sudo update-alternatives --config vim
+```
+
+Select `nvim` through the number in the first column.
 
 And that's it. Have fun with it 😁
