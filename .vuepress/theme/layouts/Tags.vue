@@ -21,6 +21,7 @@
                 <Sidebar />
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 
@@ -28,9 +29,10 @@
 import Header from "../components/Header";
 import PageTitle from "../components/PageTitle";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 export default {
-    components: { PageTitle, Header, Sidebar },
+    components: { PageTitle, Header, Sidebar, Footer },
     data() {
         return {};
     },

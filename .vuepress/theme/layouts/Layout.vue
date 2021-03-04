@@ -66,6 +66,7 @@
                 <Sidebar />
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 
@@ -75,9 +76,17 @@ import PageTitle from "../components/PageTitle";
 import Sidebar from "../components/Sidebar";
 import Newsletter from "../components/Newsletter";
 import ShareOnTwitter from "../components/ShareOnTwitter";
+import Footer from "../components/Footer";
 
 export default {
-    components: { PageTitle, Header, Sidebar, Newsletter, ShareOnTwitter },
+    components: {
+        PageTitle,
+        Header,
+        Sidebar,
+        Newsletter,
+        ShareOnTwitter,
+        Footer,
+    },
 };
 </script>
 
