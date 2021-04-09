@@ -1,5 +1,5 @@
 ---
-title: The best way to work with TODOs in VSCode
+title: Best way to work with TODOs in VSCode
 description: The best way to work with todos in vscode.
 date: 2021-06-11
 permalink: articles/the-best-way-to-work-with-todos-in-vscode
@@ -65,6 +65,12 @@ Configuration is easy. Just add the following to your vscode json settings and y
         "foreground": "black",
         "background": "red",
         "iconColour": "red",
+    },
+    "[x]": {
+        "icon": "check",
+        "foreground": "white",
+        "background": "green",
+        "iconColour": "green",
     }
 },
 "todo-tree.general.tags": [
@@ -92,7 +98,25 @@ The third section `todo-tree.general.tags` defines what tags to look for in your
 
 Yes icons deserve their own section 😉 Todo Tree uses the `codicon` iconfont. You can browse the list of available icons to set in your configuration [here](https://microsoft.github.io/vscode-codicons/dist/codicon.html).
 
-## Documentation
+## Usage Ideas
+
+Before you go, here are some useful ideas on how you can make this extension really work for you 😁
+
+### Checklists
+
+![Checklist 1](./checklist-1.png)
+
+<br />
+
+![Checklist 2](./checklist-2.png)
+
+For some reason the `close` icon that should represent the cross is not working 🤔
+
+### Notes
+
+![Notes](./notes.png)
+
+## More!
 
 For further insights and configuration options, I suggest you check out the [package documentation](https://github.com/Gruntfuggly/todo-tree).
 
