@@ -6,7 +6,6 @@ permalink: articles/the-best-way-to-work-with-todos-in-vscode
 image: /covers/the-best-way-to-work-with-todos-in-vscode.png
 tags: 
     - vscode
-publish: true
 ---
 
 Today we are going to take a look at the best way to manage TODOs in vscode I found so far.
