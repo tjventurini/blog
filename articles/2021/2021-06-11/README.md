@@ -6,6 +6,7 @@ permalink: articles/the-best-way-to-work-with-todos-in-vscode
 image: /covers/the-best-way-to-work-with-todos-in-vscode.png
 tags: 
     - vscode
+publish: true
 ---
 
 Today we are going to take a look at the best way to manage TODOs in vscode I found so far.
@@ -45,16 +46,19 @@ Configuration is easy. Just add the following to your vscode json settings and y
         "icon": "check",
         "foreground": "black",
         "background": "white",
+        "iconColour": "white",
     },
     "NOTE": {
         "icon": "note",
         "foreground": "white",
         "background": "gray",
+        "iconColour": "gray",
     },
     "COMMENT": {
         "icon": "note",
         "foreground": "white",
         "background": "gray",
+        "iconColour": "gray",
     },
     "FIXME": {
         "foreground": "black",
@@ -65,6 +69,12 @@ Configuration is easy. Just add the following to your vscode json settings and y
         "foreground": "black",
         "background": "red",
         "iconColour": "red",
+    },
+    "[ ]": {
+        "icon": "check",
+        "foreground": "black",
+        "background": "white",
+        "iconColour": "yellow",
     },
     "[x]": {
         "icon": "check",
@@ -80,10 +90,10 @@ Configuration is easy. Just add the following to your vscode json settings and y
     "TODO",
     "NOTE",
     "COMMENT",
-    "XXX",
     "[ ]",
     "[x]"
 ],
+"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
 ```
 
 Ok, that's a bit too much to just throw it at you, so let's take a closer look.
@@ -116,8 +126,23 @@ For some reason the `close` icon that should represent the cross is not working 
 
 ![Notes](./notes.png)
 
+### Multiline TODOs
+
+It is possible to have multiline todos and comments by adjusting the regular expression that is used to search for the tags.
+
+```json
+"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
+```
+
+With the given regular expression, you can have multiline todos for comments that start with `//`. Also every following line needs to have _two slashes_ and _two spaces_.
+
+![Multiline TODOs](./multiline-todos.png)
+
 ## More!
 
 For further insights and configuration options, I suggest you check out the [package documentation](https://github.com/Gruntfuggly/todo-tree).
+
+<br>
+<br>
 
 And that's it! 😁
