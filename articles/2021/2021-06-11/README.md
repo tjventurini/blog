@@ -8,7 +8,7 @@ tags:
     - vscode
 ---
 
-Today we are going to take a look at the best way to manage TODOs in vscode I found so far.
+Today we are going to take a look at the best way to manage TODOs in vscode I found so far 🤩
 
 <!-- more -->
 
