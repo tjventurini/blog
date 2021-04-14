@@ -13,9 +13,7 @@ When initializing a composer package with `composer init` you are asked for a `v
 
 <!-- more -->
 
-<p>
-    <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/qFUgQYgcpqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+<EmbedVideo video="https://www.youtube.com/embed/qFUgQYgcpqY"></EmbedVideo>
 
 With the following fine line of magic you can set a default vendor name for your packages, that composer will use as default value for your packages. Add this to your `~/.bashrc` and you don't have to type out your `vendor/package-name` each time you run `composer init`.
 

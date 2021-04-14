@@ -43,6 +43,7 @@
                         </div>
                         <div class="mt-4">
                             <div
+                                v-bind:key="tag"
                                 v-for="tag in $page.frontmatter.tags"
                                 class="inline-block mb-1"
                                 v-if="!!$tags[tag]"
