@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="video-wrapper">
+        <div class="video-wrapper rounded-lg">
             <div class="video-spacer"></div>
             <iframe
                 class="video-embed"
@@ -23,6 +23,7 @@ export default {
 <style scoped>
 .video-wrapper {
     position: relative;
+    overflow: hidden;
 }
 .video-spacer {
     width: 100%;
