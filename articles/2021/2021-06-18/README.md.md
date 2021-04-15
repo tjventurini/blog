@@ -8,7 +8,6 @@ tags:
     - database
     - mysql
     - ubuntu
-publish: true
 ---
 
 In this short tutorial we are going to take a look on how to import and export MySQL databases using the terminal.
