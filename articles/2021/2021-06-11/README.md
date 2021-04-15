@@ -14,6 +14,9 @@ Today we are going to take a look at the best way to manage TODOs in vscode I fo
 
 So recently I had to take over a project where the developer had left a lot of TODOs in his code - important ones that have not been represented in our task management tool. So for a short moment I was actually missing phpstorm since it has a nice way of handing TODOs out of the box. But then I found this awesome vscode extension [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree).
 
+
+<EmbedVideo video="https://www.youtube.com/embed/UnjY9aOtq0w" />
+
 ## What does it do?
 
 Todo Tree does not only provide highlighting for TODOs and other tags such as `FIXME`, `BUG` or any other custom tag that you want to add, but also provides a _realy_ nice way to list them.
@@ -122,6 +125,8 @@ Before you go, here are some useful ideas on how you can make this extension rea
 For some reason the `close` icon that should represent the cross is not working 🤔
 
 ### Notes
+
+Comments in your code should always be useful. And highlighting the most important ones is even better! 🚀
 
 ![Notes](./notes.png)
 
