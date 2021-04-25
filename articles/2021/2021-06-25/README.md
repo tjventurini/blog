@@ -9,11 +9,11 @@ tags:
 publish: true
 ---
 
-As I recently revived my twitter account, I thought I share some handy tools for anyone who wants to start their journey on twitter 🤓
+As I recently revived my twitter account, so I thought I share some handy tools for anyone who wants to start their journey on twitter 🤓
 
 <!-- more -->
 
-So first off, I want to say that at the time of writing this I have not yet been very successful on twitter. My follower count is 60 so I can't share much advice on how to grow your account there. All I can share with you are the tools that gave me my first insights on my twitter account.
+So first off, I want to say that at the time of writing this I have not yet been very successful on twitter. My follower count is 68 so I can't share much advice on how to grow your account there. All I can share with you are the tools that gave me my first insights on my twitter account.
 
 ## TweetDeck
 
