@@ -6,7 +6,7 @@ permalink: articles/twitter-resources
 image: /covers/twitter-resources.png
 tags: 
     - twitter
-publish: true
+# publish: true
 ---
 
 As I recently revived my twitter account, so I thought I share some handy tools for anyone who wants to start their journey on twitter 🤓
