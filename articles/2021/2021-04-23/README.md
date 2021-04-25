@@ -8,7 +8,7 @@ tags:
     - ubuntu
 ---
 
-Ever wondered if you can keep [signal](https://signal.org) in the background? 🤔
+Ever wondered if you can keep [signal](https://signal.org) open in the background? 🤔
 
 <!-- more -->
 
