@@ -70,3 +70,5 @@ Ugly but there: [regular-expression.info](https://www.regular-expressions.info/)
 Of course you should also check out the [PCRE PHP documentation](https://www.php.net/manual/ref.pcre.php). There you will find a list of all `preg_` methods and some more in depth information on the whole topic.
 
 Last but not least I want to share the [regex101.com](https://regex101.com/) tool, that I often use to play around with a given regular expression and to see if it works in all cases, before implementing it into a project.
+
+PS: Cyril Bois from ExtendsClass.com has sent me over a link to their [regex-tester](https://extendsclass.com/regex-tester.html) that could be useful too.
