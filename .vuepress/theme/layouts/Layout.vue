@@ -124,5 +124,11 @@ export default {
 
     img
         @apply rounded-lg
+
+    blockquote
+        @apply italic border-l-8 border-gray-500 bg-gray-200 px-4 py-2 rounded-lg
+
+        p
+            @apply m-0
 </style>
 
