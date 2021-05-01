@@ -126,7 +126,7 @@ export default {
         @apply rounded-lg
 
     blockquote
-        @apply italic border-l-8 border-gray-500 bg-gray-200 px-4 py-2 rounded-lg mb-4
+        @apply border-l-8 border-gray-500 bg-gray-200 px-4 py-2 rounded-lg mb-4
 
         p
             @apply m-0
