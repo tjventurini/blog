@@ -102,11 +102,11 @@ export default {
 <style lang="sass">
 .content
     h2
-        @apply text-lg
-    h3
         @apply text-xl
+    h3
+        @apply text-lg
     h2,h3
-        @apply font-bold my-4
+        @apply font-bold my-4 mt-8
 
         a
             @apply no-underline
