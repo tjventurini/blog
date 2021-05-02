@@ -49,7 +49,7 @@ As soon as the font is active you will note that everything that was set to be i
 
 But what about keywords like _class_, _return_, _new_ and all? Don't worry, that's what we're going to cover next 😉
 
-## The extra sugar! 😍
+## The Sugar! 😍
 
 Once we have a cool italic font ready, we should specify the elements that should be italic - in addition to the vscode defaults. To do so we are going to use the [TextMate tokens and scopes](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#textmate-tokens-and-scopes) that vscode can handle.
 
