@@ -89,6 +89,9 @@ export default {
     },
     computed: {
         articleTags: function () {
+            if (!this.$page.frontmatter.tags) {
+                return [];
+            }
             return this.$page.frontmatter.tags.filter((tag) => this.$tags[tag]);
         },
     },
