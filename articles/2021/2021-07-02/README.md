@@ -12,7 +12,7 @@ Recently I found out that my FiraCode article is one of my most popular articles
 
 <!-- more -->
 
-First off, [FiraCode](https://github.com/tonsky/FiraCode) is awesome, and there is nothing wrong with using it. But as I watch a lot of tech gurus online having these cool italic font-styles in their editors I wanted to find out how to have that too. So I started searching and quickly found [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript).
+[FiraCode](https://github.com/tonsky/FiraCode) is awesome. But as I saw a lot of the coding gurus online having these cool italic font-styles in their editors I wanted to find out how to have that too. So I started searching and quickly found [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript).
 
 ## What is FiraCodeiScript?
 
