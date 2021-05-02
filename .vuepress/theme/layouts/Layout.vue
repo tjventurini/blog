@@ -44,9 +44,8 @@
                         <div class="mt-4">
                             <div
                                 v-bind:key="tag"
-                                v-for="tag in $page.frontmatter.tags"
+                                v-for="tag in articleTags"
                                 class="inline-block mb-1"
-                                v-if="!!$tags[tag]"
                             >
                                 <a
                                     :href="$tags[tag].path"
@@ -87,6 +86,11 @@ export default {
         Newsletter,
         ShareOnTwitter,
         Footer,
+    },
+    computed: {
+        articleTags: function () {
+            return this.$page.frontmatter.tags.filter((tag) => this.$tags[tag]);
+        },
     },
 };
 </script>
