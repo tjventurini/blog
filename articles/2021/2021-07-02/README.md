@@ -6,7 +6,6 @@ permalink: articles/setup-firacodeiscript-for-italic-fonts-in-vscode
 image: /covers/setup-firacodeiscript-for-italic-fonts-in-vscode.png
 tags: 
     - vscode
-# publish: true
 ---
 
 Recently I found out that my FiraCode article is one of my most popular articles. But the truth is, that I don't use FiraCode anymore because I exchanged it against FiraCodeiScript and did some tweaks on the highlighting. So I thought I should share my current setup with you!
