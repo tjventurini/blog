@@ -12,11 +12,13 @@ Recently I found out that my FiraCode article is one of my most popular articles
 
 <!-- more -->
 
+<EmbedVideo video="https://www.youtube.com/embed/7gYP6aVnwpU" />
+
 [FiraCode](https://github.com/tonsky/FiraCode) is awesome. But as I saw a lot of the coding gurus online having these cool italic font-styles in their editors I wanted to find out how to have that too. So I started searching and quickly found [FiraCodeiScript](https://github.com/kencrocken/FiraCodeiScript).
 
 ## What is FiraCodeiScript?
 
-FiraCodeiScript is _a font mashup to be used in code editors, displaying a script typeface for the italic font style_. This means that on top of FiraCode it provides you some italic font styles that will bring some extra sugar to your editor ❤
+FiraCodeiScript is _a font mashup to be used in code editors, displaying a script typeface for the italic font style_. This means that on top of FiraCode it provides you some italic font styles that will bring some extra sugar to your editor 😍
 
 ## How to install it?
 
@@ -52,7 +54,7 @@ But what about keywords like _class_, _return_, _new_ and all? Don't worry, that
 
 Once we have a cool italic font ready, we should specify the elements that should be italic - in addition to the vscode defaults. To do so we are going to use the [TextMate tokens and scopes](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#textmate-tokens-and-scopes) that vscode can handle.
 
-By adding the following to your vscode configuration you will add three _color customization scopes_ - yes they also handle the font-styles 😉 The scopes can be used to define elements that should be displayed in _bold_, _italic_ or _normal_. That way you can define your _bold_ and _italic_ elements but also set some exceptions if needed.
+By adding the following to your vscode configuration you will add four _color customization scopes_ - yes they also handle the font-styles 😉 The scopes can be used to define elements that should be displayed in _bold and italic_, _bold_, _italic_ or _normal_. That way you can define your _bold_ and/or _italic_ elements but also set some exceptions if needed.
 
 ```json
 "editor.tokenColorCustomizations": {
@@ -102,17 +104,10 @@ Now that you have the scopes and know how to identify the elements you want to c
 Here is the configuration that I came up with.
 
 ```json
+"editor.fontFamily": "Fira Code iScript",
+"editor.fontSize": 16,
 "editor.tokenColorCustomizations": {
     "textMateRules": [
-        {
-            "scope": [
-                // the following elements will be displayed in bold
-                "entity.name.type.class", // class names
-            ],
-            "settings": {
-                "fontStyle": "bold"
-            }
-        },
         {
             "scope": [
                 // the following elements will be in italic
@@ -135,6 +130,24 @@ Here is the configuration that I came up with.
         },
         {
             "scope": [
+                // the following elements will be displayed in bold
+                "entity.name.type.class" // class names
+            ],
+            "settings": {
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": [
+                // the following elements will be displayed in bold and italic
+                "entity.name.section.markdown" // markdown headlines
+            ],
+            "settings": {
+                "fontStyle": "italic bold"
+            }
+        },
+        {
+            "scope": [
                 // the following elements will be excluded from italics 
                 //   (VSCode has some defaults for italics)
                 "invalid",
@@ -144,7 +157,7 @@ Here is the configuration that I came up with.
                 "constant.numeric.decimal.js",
                 "constant.numeric.json",
                 "comment.block",
-                "entity.other.attribute-name.class.css",
+                "entity.other.attribute-name.class.css"
             ],
             "settings": {
                 "fontStyle": ""
