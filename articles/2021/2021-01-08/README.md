@@ -17,7 +17,7 @@ How to install NeoVim 0.5 in Ubuntu. Short and uncomplicated.
 [NeoVim](https://neovim.io) 0.5 can be installed using the neovim-ppa.
 
 ```bash
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
 ```
