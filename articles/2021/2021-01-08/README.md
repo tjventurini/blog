@@ -56,3 +56,15 @@ sudo update-alternatives --config vim
 Select `nvim` through the number in the first column.
 
 And that's it. Have fun with it 😁
+
+## Troubleshooting 💢
+
+If you run into issues with the [infinite file opening loop](https://github.com/asvetliakov/vscode-neovim/issues/632) you can try the following.
+
+```bash
+# vscode
+curl -L https://gist.github.com/kidonng/1f70b2e3de50b519483f6c79dd3d82e2/raw/6b865cec34f78475dc50b208b30563d337427543/extension.js > ~/.vscode/extensions/asvetliakov.vscode-neovim-0.0.78/dist/extension.js
+
+# vscode insiders
+curl -L https://gist.github.com/kidonng/1f70b2e3de50b519483f6c79dd3d82e2/raw/6b865cec34f78475dc50b208b30563d337427543/extension.js > ~/.vscode-insiders/extensions/asvetliakov.vscode-neovim-0.0.78/dist/extension.js
+```
