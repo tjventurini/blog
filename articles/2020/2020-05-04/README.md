@@ -71,4 +71,6 @@ Of course you should also check out the [PCRE PHP documentation](https://www.php
 
 Last but not least I want to share the [regex101.com](https://regex101.com/) tool, that I often use to play around with a given regular expression and to see if it works in all cases, before implementing it into a project.
 
-PS: Cyril Bois from ExtendsClass.com has sent me over a link to their [regex-tester](https://extendsclass.com/regex-tester.html) that could be useful too.
+Update 29.04.2021 - Cyril Bois from ExtendsClass.com has sent me over a link to their [regex-tester](https://extendsclass.com/regex-tester.html) that could be useful too.
+
+Update 02.07.2021 - Today I found another useful tool to explore regular expressions, called [regexr.com](https://regexr.com).
