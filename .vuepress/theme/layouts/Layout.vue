@@ -7,7 +7,11 @@
                 <div class="grid grid-cols-6 sm:grid-cols-8">
                     <div
                         v-if="$page.frontmatter.image"
-                        class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7"
+                        class="
+                            col-start-2 col-span-4
+                            sm:col-start-2 sm:col-span-6
+                            lg:col-start-2 lg:col-span-7
+                        "
                     >
                         <div class="article-cover pt-2 pb-4">
                             <img
@@ -28,7 +32,11 @@
                         </div>
                     </div>
                     <div
-                        class="col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7"
+                        class="
+                            col-span-4
+                            sm:col-start-2 sm:col-span-6
+                            lg:col-start-2 lg:col-span-7
+                        "
                     >
                         <div class="date font-bold text-xl my-2">
                             {{
@@ -49,7 +57,14 @@
                             >
                                 <a
                                     :href="$tags[tag].path"
-                                    class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
+                                    class="
+                                        tag
+                                        pr-3
+                                        py-1
+                                        font-bold
+                                        text-sm
+                                        whitespace-no-wrap
+                                    "
                                     >{{ tag
                                     }}<i class="fas fa-tag text-xs pl-2"></i
                                 ></a>
@@ -137,5 +152,8 @@ export default {
 
         p
             @apply m-0
+
+    ol
+        @apply list-decimal pl-4
 </style>
 
