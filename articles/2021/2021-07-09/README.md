@@ -27,7 +27,7 @@ My starting point however in order to learn elixir will probably be the [getting
 
 ## What is the Phoenix Framework?
 
-Phoenix is a Framework for the Elixir language - much like [Laravel](https://larave.com) for [Php](https://php.net) - and provides you a basic application structure and lot's of tools and helper. That's why it is a nice starting point to start my journey 🦁
+Phoenix is a Framework for the Elixir language - much like [Laravel](https://larave.com) for [Php](https://php.net) - and provides you a basic application structure and lot's of tools and helper. That's why it is a nice starting point to start my journey.
 
 ## Installing Elixir
 
