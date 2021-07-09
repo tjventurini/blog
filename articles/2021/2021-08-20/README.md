@@ -9,7 +9,7 @@ tags:
     - database
 
 
-publish: true
+# publish: true
 ---
 
 Another short article in which I'm going to show you how to disable foreign key checks in mysql. Let's go!
