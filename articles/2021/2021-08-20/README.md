@@ -1,6 +1,6 @@
 ---
 title: Disable foreign key checks in MySQL
-description: Disable foreign key checks in mysql.
+description: How to disable foreign key checks in mysql.
 date: 2021-08-20
 permalink: articles/disable-foreign-key-checks-in-mysql
 image: /covers/disable-foreign-key-checks-in-mysql.png
