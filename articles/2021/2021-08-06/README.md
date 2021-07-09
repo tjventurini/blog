@@ -1,6 +1,6 @@
 ---
 title: Log Output of Command to File
-description: How to log output of command to file.
+description: How to log output of a command to file.
 date: 2021-08-06
 permalink: articles/log-output-of-command-to-file
 image: /covers/log-output-of-command-to-file.png
