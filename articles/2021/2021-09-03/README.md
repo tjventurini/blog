@@ -9,7 +9,8 @@ tags:
     - ubuntu
     - bash
     - zsh
-publish: true
+  
+# publish: true
 ---
 
 Today I learned how to copy-paste through the command line. So I thought I'll share it with you 😉
