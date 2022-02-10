@@ -8,7 +8,7 @@
         "@vuepress/plugin-blog": "^1.9.3",
         "@vuepress/plugin-google-analytics": "^1.7.1",
         "@vuepress/plugin-search": "^1.7.1",
-        "node-sass": "^4.14.1",
+        "node-sass": "^7.0.0",
         "sass-loader": "^7.3.1",
         "tailwindcss": "^1.9.6",
         "vuepress": "^1.7.1",
