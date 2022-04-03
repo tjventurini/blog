@@ -48,6 +48,6 @@ You can now start the *Gestures* application and start to set up the smart gestu
 
 ![Add Gestures](./add-gestures.png)
 
-> If you run into problems with setting up the gestures, I recommend you check out the wiki. There you will find further examples and a list of the key codes of `xdotool`.
+> If you run into problems with setting up the gestures, I recommend you check out the [wiki](https://gitlab.com/cunidev/gestures/-/wikis/home). There you will find further examples and a list of the key codes of `xdotool`.
 
 And that's it. Have fun with it!
