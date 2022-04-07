@@ -7,7 +7,6 @@ image: /covers/how-to-check-ubuntu-version-in-terminal.png
 tags: 
     - ubuntu
     - linux
-publish: true
 ---
 
 Sometimes you need you know what Ubuntu version your server is running on. Here is how! 🤓
