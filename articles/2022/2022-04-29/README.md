@@ -199,7 +199,7 @@ If you want to connect new containers you only need to add the following labels 
 
 And that's basically it! 🎉
 
-If you want to check out more tutorials on how to use Traefik, check out the [Traefik documentation](https://doc.traefik.io/traefik/) or the [GitHub repository](https://github.com/tjventurini/tutorials) that I'm using to experiment with Traefik and other cool stuff.
+If you want to check out more tutorials on how to use Traefik, check out the [Traefik documentation](https://doc.traefik.io/traefik/) or the [GitHub repository](https://github.com/tjventurini/tutorials) that I'm using to experiment with Traefik and other cool stuff. You can also find all the files of this article in this repository.
 
 See you next time! 🤓
 
