@@ -6,7 +6,7 @@ networks:
       name: reverse-proxy
 
 services:
-  web:
+  nginx:
     image: nginx:latest
     networks:
       - frontend
