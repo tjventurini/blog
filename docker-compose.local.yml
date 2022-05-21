@@ -1,0 +1,24 @@
+version: '3.8'
+
+networks:
+  frontend:
+    external:
+      name: reverse-proxy
+
+services:
+  nodejs:
+    image: node:10.23.0-alpine
+    networks:
+      - frontend
+    volumes:
+      - ${PWD}:/app
+    working_dir: /app
+    expose:
+      - 8080
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=reverse-proxy"
+      # http
+      - "traefik.http.routers.thomasventurini-blog.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.thomasventurini-blog.entrypoints=${ENTRYPOINT}"
+    command: "./scripts/build-local.sh"

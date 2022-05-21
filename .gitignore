@@ -2,3 +2,5 @@
 npm-debug.log
 /.vuepress/dist/
 *.code-workspace
+.env
+docker-compose.yml

@@ -1,0 +1,20 @@
+version: '3.8'
+
+networks:
+  frontend:
+    external:
+      name: reverse-proxy
+
+services:
+  web:
+    image: nginx:latest
+    networks:
+      - frontend
+    volumes:
+      - ./.vuepress/dist:/usr/share/nginx/html:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=reverse-proxy"
+      # http
+      - "traefik.http.routers.thomasventurini-blog.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.thomasventurini-blog.entrypoints=${ENTRYPOINT}"
