@@ -27,5 +27,5 @@ jobs:
       - name: Setup Known Hosts file
         run: ssh-keyscan -H ${{ secrets.SSH_HOST_IP }} >> ~/.ssh/known_hosts
       - name: Deploy with rsync
-        # run: rsync -avz ./* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_IP }}:/home/thomas/thomasventurini.com/
-        run: pwd && ls -hal
+        run: rsync -avzn ./* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_IP }}:/home/thomas/thomasventurini.com/
+        # run: pwd && ls -hal
