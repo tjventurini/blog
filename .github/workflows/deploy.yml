@@ -29,3 +29,4 @@ jobs:
       - name: Deploy with rsync
         # run: rsync -avz ./* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST_IP }}:/home/thomas/thomasventurini.com/
         run: pwd
+        run: ls -hal
