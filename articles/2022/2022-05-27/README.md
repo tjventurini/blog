@@ -7,7 +7,6 @@ image: /covers/setup-ssl-with-traefik-and-lets-encrypt.png
 tags: 
     - docker
     - traefik
-publish: true
 ---
 
 In the [last article](../2022-04-29/README.md) we have learned how to use [Traefik](https://traefik.io/) to setup a reverse proxy. In this article we will learn how to setup SSL with Traefik and [Let's Encrypt](https://letsencrypt.org/).
