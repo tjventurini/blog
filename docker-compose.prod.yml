@@ -21,3 +21,5 @@ services:
       - "traefik.http.routers.thomasventurini-blog.entrypoints=${ENTRYPOINT}"
       - "traefik.http.routers.thomasventurini-blog.tls=true"
       - "traefik.http.routers.thomasventurini-blog.tls.certresolver=letsencrypt"
+      # middlewares
+      - "traefik.http.routers.thomasventurini-blog.middlewares: redirect-to-non-www"
