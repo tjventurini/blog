@@ -17,7 +17,7 @@ services:
       - "traefik.enable=true"
       - "traefik.docker.network=reverse-proxy"
       # https
-      - "traefik.http.routers.thomasventurini-blog.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.thomasventurini-blog.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)"
       - "traefik.http.routers.thomasventurini-blog.entrypoints=${ENTRYPOINT}"
       - "traefik.http.routers.thomasventurini-blog.tls=true"
       - "traefik.http.routers.thomasventurini-blog.tls.certresolver=letsencrypt"

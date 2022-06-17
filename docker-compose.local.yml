@@ -13,6 +13,7 @@ services:
     volumes:
       - ${PWD}:/app
     working_dir: /app
+    command: "./scripts/build-local.sh"
     expose:
       - 8080
     labels:
@@ -21,4 +22,3 @@ services:
       # http
       - "traefik.http.routers.thomasventurini-blog.rule=Host(`${DOMAIN}`)"
       - "traefik.http.routers.thomasventurini-blog.entrypoints=${ENTRYPOINT}"
-    command: "./scripts/build-local.sh"
