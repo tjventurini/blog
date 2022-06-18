@@ -7,6 +7,7 @@ image: /covers/remove-www-in-url-using-traefik.png
 tags: 
     - traefik
     - docker
+publish: true
 ---
 
 As you might have noticed, I have been playing around with [Traefik](https://traefik.io/) recently. One of the things I have missed to do so far is to remove the `www.` from URLs of my sites. Today we are going to fix that! 🤓
@@ -53,7 +54,7 @@ Inside the `traefik.d` directory you can now place all sort of configuration fil
 
 ## Removing the `www.` from URLs
 
-In order to remove the `www.` from URLs, we need to create a middleware that can handle this task. Middlewares are part of the dynamic configuration. That's why we are going to create a the file `traefik.d/middlewares.yml` with the following content inside of `traefik.d`.
+In order to remove the `www.` from URLs, we need to create a middleware that can handle this task. Middlewares are part of the dynamic configuration. That's why we are going to create the file `traefik.d/middlewares.yml` with the following content inside of `traefik.d`.
 
 ```yml
 http:
@@ -66,6 +67,22 @@ http:
 ```
 
 In this example we are using the [RedirectRegex](https://doc.traefik.io/traefik/middlewares/http/redirectregex/) middleware. This middleware allows us to search for a regular expression and replace it with a different string, that will be used to redirect the user to the URL without the `www.`.
+
+To apply the middleware, we on a docker-compose setup, we can add the following to the labels of the given container.
+
+```yml
+    labels:
+      # ...
+      # middlewares
+      - "traefik.http.routers.your-container-name.middlewares=redirect-to-non-www@file"
+```
+
+If you are applying middlewares to your container already, you can just add more middlewares, by separating them with a comma.
+
+```yml
+      # middlewares
+      - "traefik.http.routers.your-container-name.middlewares=one,two,three,redirect-to-non-www@file"
+```
 
 And that's basically it! 😁
 
