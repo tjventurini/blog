@@ -86,12 +86,12 @@
 </template>
 
 <script>
-import Header from "../components/Header";
-import PageTitle from "../components/PageTitle";
-import Sidebar from "../components/Sidebar";
-import Newsletter from "../components/Newsletter";
-import ShareOnTwitter from "../components/ShareOnTwitter";
-import Footer from "../components/Footer";
+import Header from "../components/Header"
+import PageTitle from "../components/PageTitle"
+import Sidebar from "../components/Sidebar"
+import Newsletter from "../components/Newsletter"
+import ShareOnTwitter from "../components/ShareOnTwitter"
+import Footer from "../components/Footer"
 
 export default {
     components: {
@@ -105,9 +105,9 @@ export default {
     computed: {
         articleTags: function () {
             if (!this.$page.frontmatter.tags) {
-                return [];
+                return []
             }
-            return this.$page.frontmatter.tags.filter((tag) => this.$tags[tag]);
+            return this.$page.frontmatter.tags.filter((tag) => this.$tags[tag])
         },
     },
 };
@@ -155,5 +155,8 @@ export default {
 
     ol
         @apply list-decimal pl-4
+
+    ul
+        @apply list-disc pl-4 mb-4
 </style>
 
