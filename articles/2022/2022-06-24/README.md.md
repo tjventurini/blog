@@ -72,3 +72,12 @@ And that's basically it! 😁
 ## Full Example
 
 If you want to see a full example, you can check out my [tjventurini/traefik-reverse-proxy](https://github.com/tjventurini/traefik-reverse-proxy) repository. The repository contains a simple but useful Traefik setup, containing the code from this example.
+
+## Resources and Links
+
+- [Traefik documentation](https://doc.traefik.io/traefik)
+- [How to Redirect from Non-WWW to WWW with Traefik](https://medium.com/geekculture/how-to-redirect-from-non-www-to-www-with-traefik-659cb7197449)
+- [Traefik Middleware, redirect from www. to the simple URL](https://debest.fr/en/blog/traefik-middleware-redirect-from-www-to-the-simple-url)
+- [Regex101](https://regex101.com/)
+- [korridor/reverse-proxy-docker-traefik](https://github.com/korridor/reverse-proxy-docker-traefik/blob/main/configs-prod/traefik.yml)
+- [tjventurini/traefik-reverse-proxy](https://github.com/tjventurini/traefik-reverse-proxy)
