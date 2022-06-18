@@ -7,7 +7,6 @@ image: /covers/remove-www-in-url-using-traefik.png
 tags: 
     - traefik
     - docker
-publish: true
 ---
 
 As you might have noticed, I have been playing around with [Traefik](https://traefik.io/) recently. One of the things I have missed to do so far is to remove the `www.` from URLs of my sites. Today we are going to fix that! 🤓
