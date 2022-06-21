@@ -13,7 +13,7 @@
                 <div class="mb-5">
                     <h3 class="font-bold text-xl mb-2">Newsletter&nbsp;📨</h3>
                     <p>
-                        Don't want to miss any tips? Then signup for my
+                        Don't want to miss any tips? Then sign up for my
                         newsletter, it will be worth it!
                     </p>
                 </div>
@@ -54,7 +54,7 @@
 <script>
 export default {
     name: "Newsletter",
-};
+}
 </script>
 
 <style scoped>
