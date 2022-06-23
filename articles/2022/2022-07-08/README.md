@@ -1,7 +1,7 @@
 ---
 title: Separating Home Directory from Filesystem
 description: Separating home directory from filesystem.
-date: 2022-07-15
+date: 2022-07-08
 permalink: articles/separating-home-directory-from-filesystem
 image: /covers/separating-home-directory-from-filesystem.png
 tags: 
