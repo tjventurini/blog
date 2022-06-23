@@ -26,23 +26,17 @@
                     ></div>
                     <div class="col-span-1 text-center">
                         <div class="article-date text-center text-xl my-1">
-                            <i
-                                class="fa fa-calendar-day moving-gradient-text"
-                            ></i>
+                            <i class="fa fa-calendar-day moving-gradient-text"></i>
                         </div>
                     </div>
-                    <div
-                        class="
+                    <div class="
                             col-span-4
                             sm:col-start-2 sm:col-span-6
                             lg:col-start-2 lg:col-span-7
-                        "
-                    >
+                        ">
                         <div class="date font-bold text-xl my-2">
                             {{
-                                new Date(
-                                    $page.frontmatter.date
-                                ).toLocaleDateString()
+                                    (new Date($page.frontmatter.date)).toJSON().slice(0, 10)
                             }}
                         </div>
 
@@ -65,9 +59,8 @@
                                         text-sm
                                         whitespace-no-wrap
                                     "
-                                    >{{ tag
-                                    }}<i class="fas fa-tag text-xs pl-2"></i
-                                ></a>
+                                >{{ tag
+                                }}<i class="fas fa-tag text-xs pl-2"></i></a>
                             </div>
                         </div>
 
@@ -110,10 +103,11 @@ export default {
             return this.$page.frontmatter.tags.filter((tag) => this.$tags[tag])
         },
     },
-};
+}
 </script>
 
-<style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="prismjs/themes/prism-tomorrow.css">
+</style>
 
 <style lang="sass" src="../styles/code-highlighting.sass"></style>
 

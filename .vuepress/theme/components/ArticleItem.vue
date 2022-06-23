@@ -6,11 +6,10 @@
                 class="col-start-2 col-span-4 sm:col-start-2 sm:col-span-6 lg:col-start-2 lg:col-span-7"
             >
                 <div class="article-cover pt-2 pb-4">
-                    <a :href="article.path"
-                        ><img
+                    <a :href="article.path"><img
                             class="rounded-lg w-full"
                             :src="article.frontmatter.image"
-                    /></a>
+                        /></a>
                 </div>
             </div>
             <div
@@ -19,9 +18,7 @@
             ></div>
             <div class="col-span-1">
                 <div class="article-icon text-center text-xl">
-                    <i
-                        class="fa fa-hashtag moving-gradient-text align-middle"
-                    ></i>
+                    <i class="fa fa-hashtag moving-gradient-text align-middle"></i>
                 </div>
             </div>
             <div class="col-span-4 sm:col-span-6 lg:col-span-7">
@@ -38,7 +35,7 @@
             <div class="col-span-4 sm:col-span-6 lg:col-span-7 pb-4">
                 <div class="my-2 font-bold">
                     {{
-                        new Date(article.frontmatter.date).toLocaleDateString()
+                            (new Date(article.frontmatter.date)).toJSON().slice(0, 10)
                     }}
                 </div>
                 <div v-html="article.excerpt"></div>
@@ -51,8 +48,7 @@
                         <a
                             :href="$tags[tag].path"
                             class="tag pr-3 py-1 font-bold text-sm whitespace-no-wrap"
-                            >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i
-                        ></a>
+                        >{{ tag }}<i class="fas fa-tag text-xs pl-2"></i></a>
                     </div>
                 </div>
                 <div class="more-button pt-4">
@@ -61,8 +57,7 @@
                         class="moving-gradient-bg p-4 text-center px-3 py-1 rounded-lg font-bold text-white text-sm"
                     >
                         <i class="far fa-eye"></i>
-                        &nbsp; more</a
-                    >
+                        &nbsp; more</a>
                 </div>
             </div>
             <div class="col-span-1"></div>
@@ -74,5 +69,5 @@
 export default {
     name: "ArticleItem",
     props: ["article"],
-};
+}
 </script>
