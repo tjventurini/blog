@@ -1,9 +1,13 @@
 name: deploy
 
 on:
+  # run when master is pushed
   push:
     branches:
       - master
+  # also run every day at midnight
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build-and-deploy:
