@@ -1,7 +1,7 @@
 ---
 title: Laravel Newsletters
 description: Laravel newsletters.
-date: 2022-07-01
+date: 2022-07-15
 permalink: articles/laravel-newsletters
 image: /covers/laravel-newsletters.png
 tags: 
