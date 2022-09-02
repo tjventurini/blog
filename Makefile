@@ -1,18 +1,17 @@
 init:
 	@./scripts/init.sh
 
-start:
+up:
 	@./scripts/start.sh
+
+start: up
 
 down:
 	@./scripts/down.sh
-
-stop:
-	@./scripts/down.sh
+	
+stop: down
 
 clear:
 	@./scripts/clear.sh
 
-restart:
-	@./scripts/down.sh
-	@./scripts/start.sh
+restart: down up
