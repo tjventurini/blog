@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Load config.
-source ./config/colors.conf
+source ./scripts/setup-colors.sh
 
 # Clean up.
 if test -f docker-compose.yml; then
