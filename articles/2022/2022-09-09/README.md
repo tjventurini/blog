@@ -148,4 +148,6 @@ And that's it! You are now able to setup your own trading bots! 💪
 
 For further information, please visit the [Freqtrade documentation](https://www.freqtrade.io).
 
-Let me know what you think about it through [Twitter](https://twitter.com/tjventurini) 🤩
+You can also check out my current setup - that I'm actually using to trade! - on [GitHub](https://github.com/tjventurini/freqtrade).
+
+![Dollar Dollar Bills](https://c.tenor.com/6Hixx4SFAeQAAAAd/backing-you-get-yours.gif)
