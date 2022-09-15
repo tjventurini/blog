@@ -15,6 +15,8 @@ Recently I have been playing around with algorithmic trading tools such as [Freq
 
 <!-- more -->
 
+<EmbedVideo video="https://youtube.com/embed/PrPGKHCx5qY" />
+
 ## What is Freqtrade? 🤔
 
 The [documentation](https://www.freqtrade.io/en/stable/) introduces Freqtrade like so:
