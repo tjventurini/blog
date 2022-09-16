@@ -28,7 +28,7 @@ I have multiple `docker-compose` environments on my machine. Before Traefik I co
 
 Let's start our journey by creating a simple Traefik setup that will route port `80` to one of two nginx containers. Don't worry, we will go over it step by step 👍
 
-Before you can start tho you will need to [install docker and docker-compose](https://thomasventurini.com/articles/install-docker-and-compose-in-ubuntu).
+Before you can start tho you will need to [install docker and docker-compose](../../2021/2021-02-26/README.md).
 
 Once that is done, create the following `docker-compose.yml` file in a dedicated directory, eg. `tutorial/reverse-proxy`.
 

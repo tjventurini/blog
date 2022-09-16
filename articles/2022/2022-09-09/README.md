@@ -31,6 +31,8 @@ Freqtrade enables you to write your own strategies in python and backtest them u
 
 We are going to use the [docker setup](https://www.freqtrade.io/en/stable/docker_quickstart/) provided by Freqtrade. This is the simplest way of using Freqtrade so I highly recommend using this for your studies.
 
+> Check out my [Install Docker and Compose in Ubuntu](../../2021/2021-02-26/README.md) if you don't have it installed already.
+
 ```bash
 mkdir freqtrade-bot
 cd freqtrade-bot/
