@@ -12,6 +12,8 @@ Last week we took a look on [how to create a bootable USB stick using the comman
 
 <!-- more -->
 
+> Note that if you are trying to install a *Windows ISO* image, you will find, that these are missing a partition table - good Job Microsoft 🤦‍♂️ - however instead of using the *Disk* utility as shown in this article, you might want to checkout [WoeUSB](https://github.com/WoeUSB/WoeUSB) 🧐
+
 Ubuntu ships with the _Disks_ program we can use to format the and create a bootable USB stick.
 
 ![Disks](./disks.png)
