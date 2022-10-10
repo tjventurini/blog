@@ -5,7 +5,7 @@ source ./scripts/setup-colors.sh
 
 # Clean up.
 if test -f docker-compose.yml; then
-    docker-compose down --remove-orphans && echo -e "${SUCCESS}Stopped containers ✅${NC}"
+    docker compose down --remove-orphans && echo -e "${SUCCESS}Stopped containers ✅${NC}"
     rm ./docker-compose.yml && echo -e "${SUCCESS}Removed docker-compose.yml ✅${NC}"
 fi
 if test -f .env; then
