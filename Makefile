@@ -15,3 +15,9 @@ clear:
 	@./scripts/clear.sh
 
 restart: down up
+
+logs:
+	@docker-compose logs
+
+tail:
+	@docker-compose logs -f
