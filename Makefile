@@ -14,4 +14,10 @@ stop: down
 clear:
 	@./scripts/clear.sh
 
-restart: down up
+restart: down up tail
+
+logs:
+	@ docker compose logs
+
+tail:
+	@docker compose logs -f
