@@ -1,0 +1,45 @@
+stages:
+  - build
+  - deploy
+
+npm-run-build:
+  stage: build
+  image: node:19
+  only: 
+    - main
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-build
+    paths:
+      - dist/
+  script:
+    - cp .env.example .env
+    - npm ci
+    - npm run build-only
+
+deploy-dist:
+  stage: deploy
+  image: fedora:latest
+  only: 
+    - main
+  environment:
+    name: production
+    url: https://thomasventurini.com
+  needs:
+    - npm-run-build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}-build
+    paths:
+      - dist/
+  before_script:
+    - dnf install -y openssh-clients
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -t rsa docker.venturini.codes > ~/.ssh/known_hosts
+  script:
+    # create remote project dir if not available
+    - ssh thomas@docker.venturini.codes "mkdir -p /home/thomas/thomasventurini.com"
+    # upload project files
+    - scp -prq . thomas@docker.venturini.codes:/home/thomas/thomasventurini.com
+    # restart the container
+    - ssh thomas@docker.venturini.codes "cd /home/thomas/thomasventurini.com && docker-compose down && docker-compose up -d"
