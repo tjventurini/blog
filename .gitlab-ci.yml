@@ -6,7 +6,7 @@ npm-run-build:
   stage: build
   image: node:19
   only: 
-    - main
+    - master
   cache:
     key: ${CI_COMMIT_REF_SLUG}-build
     paths:
@@ -20,7 +20,7 @@ deploy-dist:
   stage: deploy
   image: fedora:latest
   only: 
-    - main
+    - master
   environment:
     name: production
     url: https://thomasventurini.com
